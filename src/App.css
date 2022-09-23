@@ -1,38 +1,204 @@
-.App {
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+}
+a {
+    color: black;
+    text-decoration: none; /*sacar subrayado*/
+    font-family: 'Overpass', sans-serif;
+}
+
+ul{
+    list-style: none; /*sacarle las viñetas*/
+}
+
+/* NAV-BAR */
+
+.mayorHeader {
+    display: flex;
+    height: 6rem;
+    justify-content: space-evenly;
+    background-color: #828282;
+    align-items: center;
+    border-bottom: 4px rgb(0, 0, 0) solid;
+}
+.logo-navBar{
+    height: 86%;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+.logo-navBar img {
+    width: 6rem;
+    height: rem;
+}
+
+.flexsearch--wrapper {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	overflow: hidden;
+	background: transparent;
+	margin: 0;
+	position: static;
+}
+	
+.flexsearch--form {
+	overflow: hidden;
+	position: relative;
+}
+	
+.flexsearch--input-wrapper {
+	padding: 0 66px 0 0; /* Right padding for submit button width */
+	overflow: hidden;
+}
+
+.flexsearch--input {
+  width: 100%;
+}
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+.flexsearch {
+  padding: 0 25px 0 200px; /* Padding for other horizontal elements */
+}
+
+.flexsearch--input {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 32px;
+    padding: 0 46px 0 10px;
+    border-color: #888;
+    border-radius: 35px; /* (height/2) + border-width */
+    border-style: solid;
+    border-width: 5px;
+    margin-top: 1px;
+    color: #333;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+	
+.flexsearch--submit {
+    position: absolute;
+	left: 261px;
+	bottom: -9px;
+	display: block;
+	width: 60px;
+	height: 60px;
+    padding: 0;
+    border: none;
+	margin-top: 2px; /* margin-top + border-width */
+    margin-right: 5px; /* border-width */
+	background: transparent;
+    color: #888;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.flexsearch--input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+ 	color: #333; 
+}
+
+.flexsearch--submit:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #888;  
+}
+
+input:-moz-placeholder {
+  color: #888
+}
+
+
+/****************
+ * Pretify demo *
+ ****************/
+.h1 {
+  float: left;
+  margin: 25px;
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.options-NavBar {
+    display: flex;
+    justify-content: space-evenly;
+    transition: 0.5ms;
+    height: 1rem;
+}
+.options-NavBar :hover{
+    color: white;
+}
+.main1, .main2 , .main3{
+    margin: 0 1rem ;
+    color: #828282;
+}
+.main1, .main2 , .main3 :hover {
+    display: flex;
+    flex-direction: column;
+}
+/* Invisible texto */
+.figcaption {
+    display:none; 
+    transition: all .5s;   
+}
+  /* Visible texto */
+.figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.svg-inline--fa {
+    height: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* END NAV-BAR */
 
-.App-link {
-  color: #61dafb;
-}
+/* ITEM LIST CONTAINER */
+.contenedorItem{
+    width:14rem; 
+    margin-top:4rem; 
+    margin-left:4rem;
+    background-color: #828282;
+    border-radius: 11px;
+    padding: 1rem 0;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
+.imagesItem{
+    display:flex; 
+    height:12rem; 
+}
+.imagesItem img {
+    display: flex;
+}
+.contenedorData{
+    background-color:gray;
+}
+.contenedorData h4 {
+    text-align:center;
+    color: white;
+}
+.priceAndBuy {
+    display:flex; 
+    justify-content:space-evenly;
+}
+/* END ITEM LIST CONTAINER */
