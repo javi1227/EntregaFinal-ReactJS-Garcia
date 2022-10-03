@@ -1,0 +1,64 @@
+.Detalle-total{
+    display: flex;
+    width: 75%;
+    margin: 4rem 16rem ;
+    border-radius: 11px;
+    border: solid 1px #dc4c2c;
+    padding: 2rem;
+    background-color: #7b1d48;
+}
+.imgContenedora img{
+    width: 20rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 18px 0px rgb(0 0 0 / 30%)
+}
+.descripcionContenedora{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-left: 10rem;
+    justify-content: center;
+    color:  rgb(191, 157, 157);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Totales {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+.PriceTotal{
+    background-color: #dc4c2c;
+    border-radius: 11px;
+    width: 5rem;
+    text-align: center;
+    border: 2.5px solid black;
+}
+.BuyTotal {
+    background-color: #dc4c2c;
+    border-radius: 11px;
+    width: 5rem;
+    text-align: center;
+}
+.Similares{
+    display: flex;
+    flex-direction: column;
+}
+.Similares h2 {
+    text-align: center;
+}
+.contenedorSimilares {
+    display: flex;
+    justify-content: center;
+}
+
+.ContenedorImg1 img, .ContenedorImg2 img, .ContenedorImg3 img{
+    width: 11rem;
+    display: flex;
+    margin: 4rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 18px 0px rgb(0 0 0 / 30%)
+
+}
