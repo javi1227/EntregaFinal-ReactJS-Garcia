@@ -1,7 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPersonBreastfeeding } from '@fortawesome/free-solid-svg-icons'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
@@ -18,12 +15,12 @@ const Footer = () => {
             <div className='Seguinos-footer'>
                 <h3>SEGUINOS EN</h3>
             <li className='footerIcon'>
-                <Link to='#'><FontAwesomeIcon icon={faCartShopping} /></Link>
-                <Link to='#'><FontAwesomeIcon icon={faPersonBreastfeeding} /></Link>
+                <Link to='#'><i className="icon1 bi bi-github"></i></Link>
+                <Link to='#'><i className="icon1 bi bi-twitter"></i></Link>
             </li>
             <li className='footerIcon2'>
-                <Link to='#'><FontAwesomeIcon icon={faPersonBreastfeeding} /></Link>
-                <Link to='#'><FontAwesomeIcon icon={faPersonBreastfeeding} /></Link>
+                <Link to='#'><i className="icon1 bi bi-facebook"></i></Link>
+                <Link to='#'><i className="icon1 bi bi-instagram"></i></Link>
             </li>
             </div>
             

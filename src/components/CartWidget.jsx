@@ -16,7 +16,7 @@ const CartWidget = () => {
                 <figcaption>Tienda</figcaption>
             </li>
             <li className="main3">
-                <Link to="#"><FontAwesomeIcon icon={faCartShopping} /></Link>
+                <Link to="/Carrito"><FontAwesomeIcon icon={faCartShopping} /></Link>
                 <figcaption>Carrito</figcaption>
             </li>
         </>
