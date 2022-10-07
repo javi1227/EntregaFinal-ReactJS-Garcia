@@ -8,7 +8,7 @@ const CartWidget = () => {
     return (
         <>
             <li className="main1">
-                <Link to="#"><FontAwesomeIcon icon={faHouse} /></Link>
+                <Link to="/"><FontAwesomeIcon icon={faHouse} /></Link>
                 <figcaption>Home</figcaption>
             </li>
             <li className="main2">

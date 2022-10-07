@@ -8,8 +8,8 @@ export default function Filter() {
           Categorias
           </button>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <Link className="dropdown-item" to={'/categoria/1'}>Argentina</Link>
-              <Link className="dropdown-item" to={'/categoria/2'}>Brasil</Link>
+              <Link className="dropdown-item" to={'/categoria/Argentina'}>Argentina</Link>
+              <Link className="dropdown-item" to={'/categoria/Brasil'}>Brasil</Link>
             </div>
     </div>
   )

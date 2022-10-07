@@ -9,6 +9,10 @@ a {
     text-decoration: none; /*sacar subrayado*/
     font-family: 'Overpass', sans-serif;
 }
+a:hover {
+    color: black;
+    text-decoration: none;
+}
 
 ul{
     list-style: none; /*sacarle las viñetas*/

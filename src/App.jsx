@@ -6,7 +6,6 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Producto from './components/content/Producto';
 import ItemDetailContainer from './components/content/ItemDetailContainer'
-import Home from './components/content/Home';
 import Filter from './partials/Filter';
 import ItemListContainer from './components/ItemListContainer';
 import Categoria from './components/content/Categoria'
@@ -21,8 +20,7 @@ function App() {
               <Route path="/Carrito" element={<Carrito/>} />
               <Route path="/" element={<ItemListContainer/>}  />
               <Route path="/producto/:id" element={<Producto/>}  />
-              <Route path="/Categoria/:id" element={<Categoria/>}  />
-              <Route path="/Home" element={<Home/>}  />
+              <Route path="/Categoria/:name_category" element={<Categoria/>}  />
               <Route path="/ItemDetailContainer" element={<ItemDetailContainer/>}  />
           </Routes>
         <Footer />
