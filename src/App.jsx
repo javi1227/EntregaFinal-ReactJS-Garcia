@@ -5,20 +5,25 @@ import Carrito from './components/content/Carrito';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Producto from './components/content/Producto';
-import Detalle from './components/content/Detalle'
+import ItemDetailContainer from './components/content/ItemDetailContainer'
 import Home from './components/content/Home';
+import Filter from './partials/Filter';
+import ItemListContainer from './components/ItemListContainer';
+import Categoria from './components/content/Categoria'
 
 function App() {
   return (
       <>
         <BrowserRouter>
         <NavBar />
+        <Filter />
           <Routes>
               <Route path="/Carrito" element={<Carrito/>} />
-              <Route path="/" element={<h1>Hola</h1>}  />
+              <Route path="/" element={<ItemListContainer/>}  />
               <Route path="/producto/:id" element={<Producto/>}  />
+              <Route path="/Categoria/:id" element={<Categoria/>}  />
               <Route path="/Home" element={<Home/>}  />
-              <Route path="/Detalle" element={<Detalle/>}  />
+              <Route path="/ItemDetailContainer" element={<ItemDetailContainer/>}  />
           </Routes>
         <Footer />
         </BrowserRouter>

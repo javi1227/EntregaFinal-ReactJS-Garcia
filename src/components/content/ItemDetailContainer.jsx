@@ -5,7 +5,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import '../.././assets/css/Detalle.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-export default function Detalle () {
+export default function Detalle ({producto}) {
 
 
     const mensaje =() =>{
@@ -19,24 +19,20 @@ export default function Detalle () {
             progress: undefined,
             });
     }
-
-
-  return (
+return (
     <>
     <div className="Detalle-total">
         <div className="imgContenedora">
-            <img src={images} alt="logo"/>
+            <img src={`../img/${producto.img}`} alt="logo"/>
         </div>
         <div className="descripcionContenedora">
             <div className="textoContenedor">
-                <p>Lionel Andrés Messi, más conocido como Leo Messi, es un futbolista argentino.
-                    Juega como delantero en el PSG de la Primera División de Francia y 
-                    en la Selección de fútbol de Argentina, de la cual es también capitán.
-                </p>
+                <p>{producto.descripcion}</p>
             </div>
             <div className="Totales">
+                    <p>stock de figuritas:{producto.stock}</p>
                 <div className="PriceTotal">
-                    <p>$45</p>
+                    <p>${producto.price}</p>
                 </div>
                 <> 
                     <button onClick={mensaje} className="BuyTotal">

@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "Category_id": 1,
+        "name_category": "Argentina",
+        "nombre": "Messi",
+        "stock": 1,
+        "price": 80,
+        "img": "Messi.png",
+        "descripcion": "Lionel Andrés Messi, más conocido como Leo Messi, es un futbolista argentino. Juega como delantero en el PSG de la primera división de Francia y en la selección de fútbol de Argentina, de la cual es también capitán"
+    },
+    {
+        "id": 2,
+        "Category_id": 2,
+        "name_category": "Brasil",
+        "nombre": "Neymar",
+        "stock": 3,
+        "price": 55,
+        "img": "Neymar.png",
+        "descripcion": "Neymar da Silva Santos Júnior, conocido popularmente en el mundo como Neymar Jr., es un futbolista brasileño que nació en Mogi das Cruzes, estado de São Paulo el 5 de febrero de 1992 y juega como extremo o segundo delantero."
+    },
+    {
+        "id": 3,
+        "Category_id": 1,
+        "nombre": "Angél Di Maria",
+        "name_category": "Argentina",
+        "stock": 5,
+        "price": 45,
+        "img": "DiMaria.png",
+        "descripcion": "Ángel Fabián Di María (Rosario, 14 de febrero de 1988) es un futbolista argentino que juega en la posición de extremo y su equipo actual es la Juventus F. C. de la Serie A de Italia. Es jugador internacional con la selección argentina."
+    },
+    {
+        "id": 4,
+        "Category_id": 2,
+        "name_category": "Brasil",
+        "nombre": "Vinícius JR",
+        "stock": 14,
+        "price": 25,
+        "img": "Vinicius.png",
+        "descripcion": "Habilidoso, rápido, con desborde y gol, en 2015, se proclamó campeón del Sudamericano Sub-15 disputado en Colombia, en el que marcó seis goles. Considerado una de las grandes promesas del fútbol mundial, hizo su debut con el primer equipo el 13 de mayo de 2017 jugando 10 minutos frente al Atlético Mineiro."
+    },
+    {
+        "id": 5,
+        "Category_id": 2,
+        "name_category": "Brasil",
+        "nombre": "Richarlison",
+        "stock": 10,
+        "price": 15,
+        "img": "Richarlison.png",
+        "descripcion": "Richarlison de Andrade (Nova Venécia, Espírito Santo, Brasil, 10 de mayo de 1997), conocido deportivamente como Richarlison, es un futbolista brasileño que juega de delantero en el Tottenham Hotspur F. C. de la Premier League de Inglaterra y en la selección de Brasil. Richarlison en la Copa América 2019."
+    },
+    {
+        "id": 6,
+        "Category_id": 1,
+        "name_category": "Argentina",
+        "nombre": "Leandro Paredes",
+        "stock": 12,
+        "price": 45,
+        "img": "Paredes.png",
+        "descripcion": "Leandro Daniel Paredes (San Justo, 29 de junio de 1994) es un futbolista argentino. Juega de centrocampista y su equipo actual es la Juventus F. C. de la Serie A de Italia. Es internacional con la selección de Argentina."
+    },
+    {
+        "id": 7,
+        "Category_id": 1,
+        "name_category": "Argentina",
+        "nombre": "Dibu Martinez",
+        "stock": 12,
+        "price": 65,
+        "img": "DibuMartinez.png",
+        "descripcion": "Damián Emiliano Martínez Romero es un futbolista argentino. Juega como arquero en Aston Villa de la Premier League, de Inglaterra. Es internacional con la selección argentina."
+    },
+    {
+        "id": 8,
+        "Category_id": 2,
+        "name_category": "Brasil",
+        "nombre": "Alisson",
+        "stock": 12,
+        "price": 35,
+        "img": "Alisson.png",
+        "descripcion": "Alisson Ramses Becker es un futbolista brasileño. Juega de guardameta y su equipo es el Liverpool F. C. de la Premier League de Inglaterra.​"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

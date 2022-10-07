@@ -16,7 +16,7 @@ export default function Home({greeting}) {
                     </span>
                 </div>
                     <div className="card-btn-carrito">
-                        <Link to='/Detalle'>Ver Producto</Link>
+                        <Link to='/ItemDetailContainer'>Ver Producto</Link>
                         <Link to='#' className="boton-carrito">Agregar al carrito</Link>
                     </div>
             </div>

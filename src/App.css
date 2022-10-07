@@ -13,6 +13,9 @@ a {
 ul{
     list-style: none; /*sacarle las viñetas*/
 }
+p{
+    margin: auto;
+}
 #root{
     background-image: url(../src/assets//images/banner.jpg);
 }
@@ -194,8 +197,16 @@ input:-moz-placeholder {
 }
 .Button-Carrito{
     width: 100%;
-    background-color: white;
-    border: none;
+    background-color: #dc4c2c;
+    color: black;
+    border: solid 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: bold;
+    border-radius: 4px;
+}
+.btn5{
+    background-color: #dc4c2c;
+    color: black;
 }
 .imagesItem{
     display:flex; 
@@ -241,6 +252,7 @@ input:-moz-placeholder {
     font-size: small;
     border-top: 4px #dc4c2c solid;
     color: white;
+    margin-top: 3rem;
 }
 .Contacto-footer .Politicas-footer{
     display: flex;
@@ -263,3 +275,22 @@ input:-moz-placeholder {
     justify-content: center;
 }
 /* END FOOOOOTER */
+
+/* filter */
+.filter{
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid #dc4c2c;
+    text-align: center;
+}
+
+
+.productosConteiner{
+    display: grid;
+    align-content: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}

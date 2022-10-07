@@ -35,6 +35,9 @@
     text-align: center;
     border: 2.5px solid black;
 }
+.PriceTotal p{
+    margin-bottom: 0;
+}
 .BuyTotal {
     background-color: #dc4c2c;
     border-radius: 11px;
