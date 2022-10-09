@@ -74,7 +74,7 @@ export default function Carrito() {
               <div className="cuponDescuento">
                   <div className="barraDeDescuento">
                       <input type="text" className="coupon-value" placeholder="Insertar Código" />
-                      <button type="submit" className="btnAplicar" style={{background: 'black', color: '#dc4c2c'}}>APLICAR</button>   
+                      <button type="submit" className="btnAplicar" style={{background: 'black', color: 'white'}}>APLICAR</button>   
                   </div>      
               </div>
           </div>

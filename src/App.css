@@ -202,14 +202,14 @@ input:-moz-placeholder {
 .Button-Carrito{
     width: 100%;
     background-color: #dc4c2c;
-    color: black;
+    color: white;
     border: solid 2px black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: bold;
     border-radius: 4px;
 }
 .btn5{
-    background-color: #dc4c2c;
+    background-color: white;
     color: black;
 }
 .imagesItem{
@@ -315,6 +315,8 @@ input:-moz-placeholder {
 .encerrandoCarro{
     margin: auto 0;
     overflow-y: scroll;
+    box-sizing: none;
+    -webkit-box-shadow: 1px 1px 18px 0px black;
 }
 .totalCarrito {
     display: flex;
@@ -332,14 +334,14 @@ input:-moz-placeholder {
     cursor: pointer;
 }
 .productoEnCarrito {
-    box-sizing: none;
-    -webkit-box-shadow: 1px 1px 18px 0px rgb(202 201 201 / 30%);
+    
     display: flex;
     justify-content: space-evenly;
     width: 40rem;
     margin-bottom: 6px;
     border-radius: 5px;
-    background-color: #dc4c2c;
+    background-color: #741c44;
+    color: rgb(191, 157, 157);;
 }
 .imagenTotalProducto{
     height: 100%;
@@ -367,13 +369,14 @@ input:-moz-placeholder {
 .codigoDescuento {
     padding: 2.5rem 0;
     box-sizing: 0px white   ;
-    -webkit-box-shadow: 1px 1px 18px 0px rgba(202, 201, 201, 0.3); 
+    -webkit-box-shadow: 1px 1px 18px 0px black; 
     text-align: center; 
     width: 98%;
     margin-left: 1%;
     margin-bottom: 2px;
     border-radius: 6px;
-    background-color: #dc4c2c;
+    background-color: #741c44;
+    color: rgb(191, 157, 157);;
 }
 .cuponDescuento {
     text-align: center;
@@ -398,25 +401,26 @@ input:-moz-placeholder {
     display: flex;
     flex-direction: column;
     box-sizing: 0px white;
-    /* -webkit-box-shadow: 1px 1px 18px 0px rgb(0 0 0 / 20%); */
+    -webkit-box-shadow: 0px 1px 18px 0px black;
     width: 98%;
     margin-left: 1%;
     margin-bottom: 3rem;
     border-radius: 5px;
-    background: #dc4c2c;
+    background: #741c44;
+    color: rgb(191, 157, 157);
 }
 .subTotalCarrito {
     display: flex;
     margin: 0.5rem 0;
     justify-content: space-between;
     width: 97%;
-    background: #dc4c2c;
+    background: #741c44;
 }
 .submit-Compra {
     width: 98%;
     padding: 5px 0;
     margin: 4px 6px;
-    color: #dc4c2c;
+    color: rgb(191, 157, 157);
     font-weight: 600;
     background-color: black;
 }
