@@ -19,7 +19,7 @@ const Footer = () => {
                 <Link to='#'><i className="icon1 bi bi-twitter"></i></Link>
             </li>
             <li className='footerIcon2'>
-                <Link to='#'><i className="icon1 bi bi-facebook"></i></Link>
+                <Link to='#'><i className="icon1 bi bi-linkedin"></i></Link>
                 <Link to='#'><i className="icon1 bi bi-instagram"></i></Link>
             </li>
             </div>

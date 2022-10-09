@@ -8,9 +8,9 @@ const NavBar = () => {
         <div className="mayorHeader">
             <>
                     <Icon />
-                <div className="barra">
+                <>
                     <SearchNavBar busqueda="Buscar Producto"/>
-                </div>
+                </>
             </>
                 <ul className="options-NavBar">  
                 <CartWidget />

@@ -3,15 +3,13 @@ import React from 'react';
 const SearchNavBar = ({busqueda}) => {
     return (
         <>
-                <div className="flexsearch">
-                    <div className="flexsearch--wrapper">
-                        <form className="flexsearch--form" action="#" method="post">
-                            <div className="flexsearch--input-wrapper">
-                                <input className="flexsearch--input" type="search" placeholder={busqueda} />
-                            </div>
-                                <input className="flexsearch--submit" defaultValue="➜" />
-                        </form>
-                    </div>
+                <div className="header_searchBar" style={{borderRadius: '3rem'}}>
+                    <form action="/search" method="GET">
+                        <input type="text" name="search" style={{fontSize: '1rem', fontWeight: 'bold'}}  placeholder={busqueda}/>
+                        <button type="submit">
+                        <i class="bi bi-search"></i>
+                        </button>
+                    </form>
                 </div>
         </>
     );
