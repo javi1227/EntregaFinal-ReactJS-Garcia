@@ -7,7 +7,7 @@ const SearchNavBar = ({busqueda}) => {
                     <form action="/search" method="GET">
                         <input type="text" name="search" style={{fontSize: '1rem', fontWeight: 'bold'}}  placeholder={busqueda}/>
                         <button type="submit">
-                        <i class="bi bi-search"></i>
+                        <i className="bi bi-search"></i>
                         </button>
                     </form>
                 </div>

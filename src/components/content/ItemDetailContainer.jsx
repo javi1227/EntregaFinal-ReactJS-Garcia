@@ -6,8 +6,7 @@ import '../.././assets/css/Detalle.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export default function Detalle ({producto}) {
-
-
+    
     const mensaje =() =>{
         toast.success('COMPRA EXITOSA!', {
             osition: "top-right",
@@ -21,7 +20,7 @@ export default function Detalle ({producto}) {
     }
 return (
     <>
-    <div className="Detalle-total">
+    <div className="Detalle-total" >
         <div className="imgContenedora">
             <img src={`../img/${producto.img}`} alt="logo"/>
         </div>
@@ -31,7 +30,7 @@ return (
             </div>
             <div className="Totales">
                     <p>stock de figuritas:{producto.stock}</p>
-                <div className="PriceTotal">
+                <div className="PriceTotal" style={{color: "black"}} >
                     <p>${producto.price}</p>
                 </div>
                 <> 
@@ -61,5 +60,5 @@ return (
             </div>
             <ToastContainer />
 </>
-  )
+)
 }

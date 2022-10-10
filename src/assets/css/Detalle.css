@@ -50,6 +50,7 @@
 }
 .Similares h2 {
     text-align: center;
+    color: rgb(191, 157, 157);
 }
 .contenedorSimilares {
     display: flex;

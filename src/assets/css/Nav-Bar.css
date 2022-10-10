@@ -1,0 +1,117 @@
+.mayorHeader {
+    display: flex;
+    height: 6rem;
+    justify-content: space-evenly;
+    background-color: #741c44;
+    align-items: center;
+    border-bottom: 4px #dc4c2c solid;
+}
+.logo-navBar{
+    height: 86%;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    border: solid 3px #dc4c2c;
+}
+.logo-navBar img {
+    width: 6rem;
+    height: rem;
+}
+/* search */
+/* SearchBar */
+.logo_Buscador {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_searchBar {
+    border-radius: 5px;
+    border: 2px solid #dc4c2c;
+    padding: 0.5rem;
+    background-color: white;
+    color: gray;
+
+}
+  .header_searchBar form {
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+  }
+  
+  .header_searchBar form input {
+    border: none;
+    background: white;
+  }
+  
+  .header_searchBar form input:focus {
+    outline: none;
+  }
+  
+  .header_searchBar form input::placeholder {
+    text-transform: uppercase;
+    color: gray;
+  }
+  
+  .header_searchBar form button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: gray;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    width: 2rem;
+    transition: all 0.5s ease-in;
+  }
+  
+  .header_searchBar form button:hover {
+    background-color: rgba(35, 179, 232, 0.1);
+    cursor: pointer;
+  }
+  
+  /* END SearchBar */
+
+/* END search */
+
+
+
+.h1 {
+    float: left;
+    margin: 25px;
+    color: #333;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 45px;
+    text-align: center;
+}
+
+.options-NavBar {
+    display: flex;
+    justify-content: space-evenly;
+    transition: 0.5ms;
+    height: 1rem;
+}
+.options-NavBar :hover{
+    color: white;
+}
+.main1, .main2 , .main3{
+    margin: 0 1rem ;
+    color: #741c44;
+}
+
+/* Invisible texto */
+.figcaption {
+    display:none; 
+    transition: all .5s;   
+}
+  /* Visible texto */
+.figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
+}
+
+.svg-inline--fa {
+    height: 1rem;
+}
+
+/* END NAV-BAR */

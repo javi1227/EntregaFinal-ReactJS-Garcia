@@ -6,6 +6,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import '../assets/css/Home.css';
 
 const ItemListContainer = () => {
+    const scrollToTop = () => {
+        document.getElementById("scroller").scroll(0,0)
+    }
 
     const [productos, setProductos] = useState([]);
     
@@ -28,7 +31,7 @@ const ItemListContainer = () => {
                                     </span>
                                 </div>
                                 <div className="card-btn-carrito">
-                                    <button className='btn5'><Link to={`/producto/${producto.id}`}>Ver Producto</Link></button>
+                                    <button className='btn5' onClick={scrollToTop}><Link to={`/producto/${producto.id}`}>Ver Producto</Link></button>
                                     <Link to='#'><button className='Button-Carrito' onClick={mensaje}>Agregar al carrito</button></Link>
                                 </div>
                     </div>
@@ -56,6 +59,7 @@ const ItemListContainer = () => {
         <div className='productosConteiner'>
         {productos}
         <ToastContainer />
+        < scrollToTop />
         </div>
     );
 }

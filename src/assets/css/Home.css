@@ -36,21 +36,23 @@
 
 .card-contenido .price{
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     background-color: #dc4c2c;
     color: white;
+    transform: translateX(-1px);
     visibility: hidden;
+    transition: all 600ms ease-in-out;
     box-shadow: 2px 3px 4px black;
     padding: 2px;
-    border-radius: 11px;
+    border-radius: 0 10px 10px 0;
     width: 2.5rem;
 }
 
 .card:hover .card-contenido .price{
-    transform: translateX(0px);
     visibility: visible;
-
+    width: 3rem;
+    transform: translateX(0);
 }
 
 .card .card-contenido .favorite{
@@ -62,8 +64,9 @@
 }
 
 .card .card-contenido .favorite:hover svg{
-    color: aqua;
-}
+    fill: aqua;
+
+  }
 
 .card .card-btn-carrito{
     display: flex;

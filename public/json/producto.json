@@ -3,21 +3,21 @@
         "id": 1,
         "Category_id": 1,
         "name_category": "Argentina",
-        "nombre": "Messi",
-        "stock": 1,
-        "price": 80,
-        "img": "Messi.png",
-        "descripcion": "Lionel Andrés Messi, más conocido como Leo Messi, es un futbolista argentino. Juega como delantero en el PSG de la primera división de Francia y en la selección de fútbol de Argentina, de la cual es también capitán"
+        "nombre": "Dibu Martinez",
+        "stock": 12,
+        "price": 65,
+        "img": "DibuMartinez.png",
+        "descripcion": "Damián Emiliano Martínez Romero es un futbolista argentino. Juega como arquero en Aston Villa de la Premier League, de Inglaterra. Es internacional con la selección argentina."
     },
     {
         "id": 2,
-        "Category_id": 2,
-        "name_category": "Brasil",
-        "nombre": "Neymar",
-        "stock": 3,
-        "price": 55,
-        "img": "Neymar.png",
-        "descripcion": "Neymar da Silva Santos Júnior, conocido popularmente en el mundo como Neymar Jr., es un futbolista brasileño que nació en Mogi das Cruzes, estado de São Paulo el 5 de febrero de 1992 y juega como extremo o segundo delantero."
+        "Category_id": 1,
+        "name_category": "Argentina",
+        "nombre": "Leandro Paredes",
+        "stock": 12,
+        "price": 45,
+        "img": "Paredes.png",
+        "descripcion": "Leandro Daniel Paredes (San Justo, 29 de junio de 1994) es un futbolista argentino. Juega de centrocampista y su equipo actual es la Juventus F. C. de la Serie A de Italia. Es internacional con la selección de Argentina."
     },
     {
         "id": 3,
@@ -31,6 +31,36 @@
     },
     {
         "id": 4,
+        "Category_id": 1,
+        "name_category": "Argentina",
+        "nombre": "Messi",
+        "stock": 1,
+        "price": 80,
+        "img": "Messi.png",
+        "descripcion": "Lionel Andrés Messi, más conocido como Leo Messi, es un futbolista argentino. Juega como delantero en el PSG de la primera división de Francia y en la selección de fútbol de Argentina, de la cual es también capitán"
+    },
+    {
+        "id": 5,
+        "Category_id": 2,
+        "name_category": "Brasil",
+        "nombre": "Alisson",
+        "stock": 12,
+        "price": 35,
+        "img": "Alisson.png",
+        "descripcion": "Alisson Ramses Becker es un futbolista brasileño. Juega de guardameta y su equipo es el Liverpool F. C. de la Premier League de Inglaterra.​"
+    },
+    {
+        "id": 6,
+        "Category_id": 2,
+        "name_category": "Brasil",
+        "nombre": "Marquinhos",
+        "stock": 10,
+        "price": 15,
+        "img": "Marquinhos.png",
+        "descripcion": "Marcos Aoás Corrêa, conocido popularmente como 'Marquinhos', es un futbolista brasileño que juega como defensa para el París Saint-Germain F. C. de la Ligue 1 de Francia del cual es capitán. También juega para la selección de su país."
+    },
+    {
+        "id": 7,
         "Category_id": 2,
         "name_category": "Brasil",
         "nombre": "Vinícius JR",
@@ -40,44 +70,94 @@
         "descripcion": "Habilidoso, rápido, con desborde y gol, en 2015, se proclamó campeón del Sudamericano Sub-15 disputado en Colombia, en el que marcó seis goles. Considerado una de las grandes promesas del fútbol mundial, hizo su debut con el primer equipo el 13 de mayo de 2017 jugando 10 minutos frente al Atlético Mineiro."
     },
     {
-        "id": 5,
-        "Category_id": 2,
-        "name_category": "Brasil",
-        "nombre": "Richarlison",
-        "stock": 10,
-        "price": 15,
-        "img": "Richarlison.png",
-        "descripcion": "Richarlison de Andrade (Nova Venécia, Espírito Santo, Brasil, 10 de mayo de 1997), conocido deportivamente como Richarlison, es un futbolista brasileño que juega de delantero en el Tottenham Hotspur F. C. de la Premier League de Inglaterra y en la selección de Brasil. Richarlison en la Copa América 2019."
-    },
-    {
-        "id": 6,
-        "Category_id": 1,
-        "name_category": "Argentina",
-        "nombre": "Leandro Paredes",
-        "stock": 12,
-        "price": 45,
-        "img": "Paredes.png",
-        "descripcion": "Leandro Daniel Paredes (San Justo, 29 de junio de 1994) es un futbolista argentino. Juega de centrocampista y su equipo actual es la Juventus F. C. de la Serie A de Italia. Es internacional con la selección de Argentina."
-    },
-    {
-        "id": 7,
-        "Category_id": 1,
-        "name_category": "Argentina",
-        "nombre": "Dibu Martinez",
-        "stock": 12,
-        "price": 65,
-        "img": "DibuMartinez.png",
-        "descripcion": "Damián Emiliano Martínez Romero es un futbolista argentino. Juega como arquero en Aston Villa de la Premier League, de Inglaterra. Es internacional con la selección argentina."
-    },
-    {
         "id": 8,
         "Category_id": 2,
         "name_category": "Brasil",
-        "nombre": "Alisson",
+        "nombre": "Neymar",
+        "stock": 3,
+        "price": 79,
+        "img": "Neymar.png",
+        "descripcion": "Neymar da Silva Santos Júnior, conocido popularmente en el mundo como Neymar Jr., es un futbolista brasileño que nació en Mogi das Cruzes, estado de São Paulo el 5 de febrero de 1992 y juega como extremo o segundo delantero."
+    },
+    {
+        "id": 9,
+        "Category_id": 3,
+        "name_category": "Portugal",
+        "nombre": "Diogo Costa",
         "stock": 12,
         "price": 35,
-        "img": "Alisson.png",
-        "descripcion": "Alisson Ramses Becker es un futbolista brasileño. Juega de guardameta y su equipo es el Liverpool F. C. de la Premier League de Inglaterra.​"
+        "img": "Diogo-costa.png",
+        "descripcion": "Diogo Costa es un futbolista portugués que juega como portero en el F. C. Oporto de la Primera Liga de Portugal. Proveniente del sistema juvenil del F. C.​"
+    },
+    {
+        "id": 10,
+        "Category_id": 3,
+        "name_category": "Portugal",
+        "nombre": "Pepe",
+        "stock": 12,
+        "price": 35,
+        "img": "Pepe.png",
+        "descripcion": "Képler Laverán Lima Ferreira (Maceió, Alagoas, Brasil, 26 de febrero de 1983), conocido deportivamente como Pepe, es un futbolista brasileño, nacionalizado portugués, que juega como defensa en el F. C. Porto de la Primeira Liga de Portugal.​"
+    },
+    {
+        "id": 11,
+        "Category_id": 3,
+        "name_category": "Portugal",
+        "nombre": "Bruno Fernandes",
+        "stock": 12,
+        "price": 35,
+        "img": "Bruno-fernandes.png",
+        "descripcion": "Bruno Miguel Borges Fernandes es un futbolista portugués que juega de centrocampista en el Manchester United F. C. de la Premier League de Inglaterra, y la selección de fútbol de Portugal.​​"
+    },
+    {
+        "id": 12,
+        "Category_id": 3,
+        "name_category": "Portugal",
+        "nombre": "Crisitano Ronaldo",
+        "stock": 12,
+        "price": 80,
+        "img": "CR7.png",
+        "descripcion": "Cristiano Ronaldo dos Santos Aveiro, conocido como Cristiano Ronaldo, es un futbolista portugués que juega como delantero o extremo. Jugador histórico, estuvo ligado a diversos equipos importantes antes de integrar desde 2021 el plantel del Manchester United Football Club de la Premier League de Inglaterra. ​"
+    },
+    {
+        "id": 13,
+        "Category_id": 4,
+        "name_category": "Francia",
+        "nombre": "Hugo Lloris",
+        "stock": 12,
+        "price": 35,
+        "img": "Lloris.png",
+        "descripcion": "Hugo Gilberto Dominique Lloris es un futbolista francés que juega de portero en el Tottenham Hotspur F. C. de la Premier League de Inglaterra y en la selección de fútbol de Francia, equipos de los cuales es capitán.​"
+    },
+    {
+        "id": 14,
+        "Category_id": 4,
+        "name_category": "Francia",
+        "nombre": "N´golo Kanté",
+        "stock": 12,
+        "price": 45,
+        "img": "Kante.png",
+        "descripcion": "N'Golo Kanté es un futbolista francés que juega en la posición de centrocampista en el Chelsea F. C. de la Premier League de Inglaterra. Es internacional absoluto con la selección francesa desde 2016.​"
+    },
+    {
+        "id": 15,
+        "Category_id": 4,
+        "name_category": "Francia",
+        "nombre": "Mbappe",
+        "stock": 12,
+        "price": 79,
+        "img": "Mbappe.png",
+        "descripcion": "Kylian Mbappé Lottin es un futbolista francés que juega como delantero en el PSG, Comenzó su carrera con el club Mónaco de la Ligue 1, haciendo su debut profesional en 2015, a los 16 años.​"
+    },
+    {
+        "id": 16,
+        "Category_id": 4,
+        "name_category": "Francia",
+        "nombre": "Karim Benzema",
+        "stock": 12,
+        "price": 79,
+        "img": "Benzema.png",
+        "descripcion": "Karim Benzema es un futbolista francés de ascendencia argelina​​ que juega como delantero en el Real Madrid Club de Fútbol de la Primera División de España desde la temporada 2009-10.​"
     }
 
 

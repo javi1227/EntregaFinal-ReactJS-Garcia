@@ -1,0 +1,31 @@
+/* FOOOOOTER */
+.footerDesign {
+    background-color: #741c44;
+    display: flex;
+    justify-content: space-around;
+    font-size: small;
+    border-top: 4px #dc4c2c solid;
+    color: white;
+    margin-top: 3rem;
+}
+.Contacto-footer .Politicas-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Contacto-footer h3 , .Politicas-footer h3 , .Seguinos-footer h3{
+    color: #dc4c2c;
+}
+.Seguinos-footer {
+    display: flex;
+    flex-direction: column;
+}
+.footerIcon {
+    display: flex;
+    justify-content: center;
+}
+.footerIcon2 {
+    display: flex;
+    justify-content: center;
+}
+/* END FOOOOOTER */
