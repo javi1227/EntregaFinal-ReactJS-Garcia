@@ -1,4 +1,4 @@
-import React from 'react';
+import {memo} from 'react';
 import images from '../assets/images/logo.png'
 import { Link } from 'react-router-dom';
 
@@ -15,4 +15,4 @@ const logo = () => {
     );
 }
 
-export default logo;
+export default memo (logo);

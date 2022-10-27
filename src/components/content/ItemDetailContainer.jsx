@@ -1,40 +1,43 @@
-import React from 'react';
+import React, {useState, useContext} from 'react';
+import { CarritoContext } from '../../context/CarritoContext';
 import images from '../../assets/images/Messi.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import '../.././assets/css/Detalle.css';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 export default function Detalle ({producto}) {
+    const [cantidad, setCantidad] = useState(1);
     
-    const mensaje =() =>{
-        toast.success('COMPRA EXITOSA!', {
-            osition: "top-right",
-            autoClose: 1000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            });
+    const {carrito, agregarProducto, quitarProducto} = useContext(CarritoContext)
+    const cantProducto = (operacion) => {
+        if(operacion == "+") {
+            if(cantidad < producto.stock) {
+                setCantidad(cantidad +1)
+            }
+        } else {
+            if(cantidad >1){
+                setCantidad(cantidad -1)
+            }
+        }
     }
 return (
     <>
     <div className="Detalle-total" >
         <div className="imgContenedora">
-            <img src={`../img/${producto.img}`} alt="logo"/>
+            <img src={producto.img} alt="logo"/>
         </div>
         <div className="descripcionContenedora">
             <div className="textoContenedor">
                 <p>{producto.descripcion}</p>
             </div>
             <div className="Totales">
-                    <p>stock de figuritas:{producto.stock}</p>
+                    <button className='btn btn-dark' onClick={()=> cantProducto("-")}>-</button>
+                <p className='card-text'>{cantidad}</p>
+                    <button className='btn btn-dark' onClick={()=> cantProducto("+")}>+</button>
                 <div className="PriceTotal" style={{color: "black"}} >
                     <p>${producto.price}</p>
                 </div>
                 <> 
-                    <button onClick={mensaje} className="BuyTotal">
+                    <button className="BuyTotal" onClick={()=> agregarProducto(producto, cantidad)}>
                         <p><FontAwesomeIcon icon={faCartShopping} /></p>
                     </button>
                 </>
@@ -58,7 +61,6 @@ return (
 
                 </div>
             </div>
-            <ToastContainer />
 </>
 )
 }

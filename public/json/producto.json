@@ -6,7 +6,7 @@
         "nombre": "Dibu Martinez",
         "stock": 12,
         "price": 65,
-        "img": "DibuMartinez.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FDibuMartinez.png?alt=media&token=26c0fbfd-907e-4583-b668-ce19a17e1266",
         "descripcion": "Damián Emiliano Martínez Romero es un futbolista argentino. Juega como arquero en Aston Villa de la Premier League, de Inglaterra. Es internacional con la selección argentina."
     },
     {
@@ -16,7 +16,7 @@
         "nombre": "Leandro Paredes",
         "stock": 12,
         "price": 45,
-        "img": "Paredes.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FParedes.png?alt=media&token=e68dfece-e800-4e0d-9e03-00553c1b7534",
         "descripcion": "Leandro Daniel Paredes (San Justo, 29 de junio de 1994) es un futbolista argentino. Juega de centrocampista y su equipo actual es la Juventus F. C. de la Serie A de Italia. Es internacional con la selección de Argentina."
     },
     {
@@ -26,7 +26,7 @@
         "name_category": "Argentina",
         "stock": 5,
         "price": 45,
-        "img": "DiMaria.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FDiMaria.png?alt=media&token=715be8c8-a057-4513-aed5-ca7d5c611a82",
         "descripcion": "Ángel Fabián Di María (Rosario, 14 de febrero de 1988) es un futbolista argentino que juega en la posición de extremo y su equipo actual es la Juventus F. C. de la Serie A de Italia. Es jugador internacional con la selección argentina."
     },
     {
@@ -36,7 +36,7 @@
         "nombre": "Messi",
         "stock": 1,
         "price": 80,
-        "img": "Messi.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FMessi.png?alt=media&token=1b4232ec-0841-484b-b04e-4b736ad92b79",
         "descripcion": "Lionel Andrés Messi, más conocido como Leo Messi, es un futbolista argentino. Juega como delantero en el PSG de la primera división de Francia y en la selección de fútbol de Argentina, de la cual es también capitán"
     },
     {
@@ -46,7 +46,7 @@
         "nombre": "Alisson",
         "stock": 12,
         "price": 35,
-        "img": "Alisson.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FAlisson.png?alt=media&token=5e2fb4f7-3ff2-4c59-b4d7-75849ca02653",
         "descripcion": "Alisson Ramses Becker es un futbolista brasileño. Juega de guardameta y su equipo es el Liverpool F. C. de la Premier League de Inglaterra.​"
     },
     {
@@ -56,7 +56,7 @@
         "nombre": "Marquinhos",
         "stock": 10,
         "price": 15,
-        "img": "Marquinhos.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FMarquinhos.png?alt=media&token=c1f6ebfe-e51f-48e7-9417-45166781fec4",
         "descripcion": "Marcos Aoás Corrêa, conocido popularmente como 'Marquinhos', es un futbolista brasileño que juega como defensa para el París Saint-Germain F. C. de la Ligue 1 de Francia del cual es capitán. También juega para la selección de su país."
     },
     {
@@ -66,7 +66,7 @@
         "nombre": "Vinícius JR",
         "stock": 14,
         "price": 25,
-        "img": "Vinicius.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FVinicius.png?alt=media&token=9af69440-2506-4ec2-bd46-c669b772781a",
         "descripcion": "Habilidoso, rápido, con desborde y gol, en 2015, se proclamó campeón del Sudamericano Sub-15 disputado en Colombia, en el que marcó seis goles. Considerado una de las grandes promesas del fútbol mundial, hizo su debut con el primer equipo el 13 de mayo de 2017 jugando 10 minutos frente al Atlético Mineiro."
     },
     {
@@ -76,7 +76,7 @@
         "nombre": "Neymar",
         "stock": 3,
         "price": 79,
-        "img": "Neymar.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FNeymar.png?alt=media&token=8430d318-c7c9-4924-a356-f3ec1439174e",
         "descripcion": "Neymar da Silva Santos Júnior, conocido popularmente en el mundo como Neymar Jr., es un futbolista brasileño que nació en Mogi das Cruzes, estado de São Paulo el 5 de febrero de 1992 y juega como extremo o segundo delantero."
     },
     {
@@ -86,7 +86,7 @@
         "nombre": "Diogo Costa",
         "stock": 12,
         "price": 35,
-        "img": "Diogo-costa.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FDiogo-costa.png?alt=media&token=9c5bdf13-e628-48c1-ba15-bb939ec29174",
         "descripcion": "Diogo Costa es un futbolista portugués que juega como portero en el F. C. Oporto de la Primera Liga de Portugal. Proveniente del sistema juvenil del F. C.​"
     },
     {
@@ -96,7 +96,7 @@
         "nombre": "Pepe",
         "stock": 12,
         "price": 35,
-        "img": "Pepe.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FPepe.png?alt=media&token=44be91c6-c8c2-484c-a3c8-88dbbd3a6fd8",
         "descripcion": "Képler Laverán Lima Ferreira (Maceió, Alagoas, Brasil, 26 de febrero de 1983), conocido deportivamente como Pepe, es un futbolista brasileño, nacionalizado portugués, que juega como defensa en el F. C. Porto de la Primeira Liga de Portugal.​"
     },
     {
@@ -106,7 +106,7 @@
         "nombre": "Bruno Fernandes",
         "stock": 12,
         "price": 35,
-        "img": "Bruno-fernandes.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FBruno-fernandes.png?alt=media&token=a84ef0f3-a019-4d96-ac29-9fbcc6b9db77",
         "descripcion": "Bruno Miguel Borges Fernandes es un futbolista portugués que juega de centrocampista en el Manchester United F. C. de la Premier League de Inglaterra, y la selección de fútbol de Portugal.​​"
     },
     {
@@ -116,7 +116,7 @@
         "nombre": "Crisitano Ronaldo",
         "stock": 12,
         "price": 80,
-        "img": "CR7.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FCR7.png?alt=media&token=3dc2966e-ed6c-4332-9e5a-38981797a6a7",
         "descripcion": "Cristiano Ronaldo dos Santos Aveiro, conocido como Cristiano Ronaldo, es un futbolista portugués que juega como delantero o extremo. Jugador histórico, estuvo ligado a diversos equipos importantes antes de integrar desde 2021 el plantel del Manchester United Football Club de la Premier League de Inglaterra. ​"
     },
     {
@@ -126,7 +126,7 @@
         "nombre": "Hugo Lloris",
         "stock": 12,
         "price": 35,
-        "img": "Lloris.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FLloris.png?alt=media&token=dfc5258e-48f3-473c-9c9e-d21ad047b550",
         "descripcion": "Hugo Gilberto Dominique Lloris es un futbolista francés que juega de portero en el Tottenham Hotspur F. C. de la Premier League de Inglaterra y en la selección de fútbol de Francia, equipos de los cuales es capitán.​"
     },
     {
@@ -136,7 +136,7 @@
         "nombre": "N´golo Kanté",
         "stock": 12,
         "price": 45,
-        "img": "Kante.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FKante.png?alt=media&token=de5ff98c-c5d9-463b-aadb-a6b737d8b610",
         "descripcion": "N'Golo Kanté es un futbolista francés que juega en la posición de centrocampista en el Chelsea F. C. de la Premier League de Inglaterra. Es internacional absoluto con la selección francesa desde 2016.​"
     },
     {
@@ -146,7 +146,7 @@
         "nombre": "Mbappe",
         "stock": 12,
         "price": 79,
-        "img": "Mbappe.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FMbappe.png?alt=media&token=1d521739-b8c0-40f4-8143-4b6abdbd0ebf",
         "descripcion": "Kylian Mbappé Lottin es un futbolista francés que juega como delantero en el PSG, Comenzó su carrera con el club Mónaco de la Ligue 1, haciendo su debut profesional en 2015, a los 16 años.​"
     },
     {
@@ -156,7 +156,7 @@
         "nombre": "Karim Benzema",
         "stock": 12,
         "price": 79,
-        "img": "Benzema.png",
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FBenzema.png?alt=media&token=d32ed8c3-a99b-42bf-a207-4b3b4dd4800e",
         "descripcion": "Karim Benzema es un futbolista francés de ascendencia argelina​​ que juega como delantero en el Real Madrid Club de Fútbol de la Primera División de España desde la temporada 2009-10.​"
     }
 

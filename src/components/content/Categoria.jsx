@@ -14,7 +14,7 @@ const Categoria = () => {
                         <div className='contenedorItem'>
                                             <div className='cardsContainer'>
                                                 <div className="card">
-                                                        <img src={`../img/${producto.img}`} alt="logo" className="card-image" />
+                                                        <img src={producto.img} alt="logo" className="card-image" />
                                                             <div className="card-contenido">
                                                                 <p className="price">$ {producto.price}</p>
                                                                 <span className="favorite">

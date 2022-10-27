@@ -91,12 +91,22 @@
     transition: 0.5ms;
     height: 1rem;
 }
-.options-NavBar :hover{
-    color: white;
-}
+
 .main1, .main2 , .main3{
     margin: 0 1rem ;
     color: #741c44;
+}
+.main1:hover {
+  color: white;
+}
+.main2:hover {
+  color: white;
+}
+.main3:hover {
+  color: white;
+}
+.main4:hover {
+  color: white;
 }
 
 /* Invisible texto */

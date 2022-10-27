@@ -9,25 +9,28 @@ import ItemDetailContainer from './components/content/ItemDetailContainer'
 import Filter from './partials/Filter';
 import ItemListContainer from './components/ItemListContainer';
 import Categoria from './components/content/Categoria'
+import Contacto from './components/content/Contacto';
+import {DarkModeProvider} from '../src/context/darkModeContext'
 
 function App() {
   return (
       <>
-        <BrowserRouter>
-        <NavBar />
-        <Filter />
-          <Routes>
-              <Route path="/Carrito" element={<Carrito/>} />
-              <Route path="/" element={<ItemListContainer/>}  />
-              <Route path="/producto/:id" element={<Producto/>}  />
-              <Route path="/Categoria/:name_category" element={<Categoria/>}  />
-              <Route path="/ItemDetailContainer" element={<ItemDetailContainer/>}  />
-          </Routes>
-        <Footer />
-        </BrowserRouter>
-
-              
-          
+      <DarkModeProvider>
+          <BrowserRouter>
+              <NavBar />
+              <Filter />
+              <Routes>
+                  <Route path="/Carrito" element={<Carrito/>} />
+                  <Route path="/" element={<ItemListContainer/>}  />
+                  <Route path="/Contacto" element={<Contacto/>}  />
+                  <Route path="/producto/:id" element={<Producto/>}  />
+                  <Route path="/Categoria/:name_category" element={<Categoria/>}  />
+                  <Route path="/ItemDetailContainer" element={<ItemDetailContainer/>}  />
+                  <Route  path='*' element={<h1>Error 404</h1>}/>
+              </Routes>
+              <Footer />
+          </BrowserRouter>
+      </DarkModeProvider>
     </>
   );
 }
