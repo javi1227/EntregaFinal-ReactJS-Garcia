@@ -2,7 +2,7 @@
     display: flex;
     height: 6rem;
     justify-content: space-evenly;
-    background-color: #741c44;
+    background-color: var(--theme-background-color);
     align-items: center;
     border-bottom: 4px #dc4c2c solid;
 }
@@ -28,7 +28,7 @@
     border-radius: 5px;
     border: 2px solid #dc4c2c;
     padding: 0.5rem;
-    background-color: white;
+    background-color: var(--theme-background-color);
     color: gray;
 
 }
@@ -40,7 +40,7 @@
   
   .header_searchBar form input {
     border: none;
-    background: white;
+    background: var(--theme-background-color);
   }
   
   .header_searchBar form input:focus {
@@ -53,7 +53,7 @@
   }
   
   .header_searchBar form button {
-    background-color: white;
+    background-color: var(--theme-background-color);
     border: none;
     border-radius: 5px;
     color: gray;
@@ -77,7 +77,7 @@
 .h1 {
     float: left;
     margin: 25px;
-    color: #333;
+    color: var(--theme-background-color);;
     font-family: 'Helvetica', sans-serif;
     font-size: 45px;
     font-weight: bold;
@@ -94,7 +94,7 @@
 
 .main1, .main2 , .main3{
     margin: 0 1rem ;
-    color: #741c44;
+    color: var(--theme-background-color);;
 }
 .main1:hover {
   color: white;

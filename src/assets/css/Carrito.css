@@ -1,23 +1,30 @@
 /* CARRITO */
-
-.contenidoEntero{
+.container {
     display: flex;
-    justify-content: space-between;
-    padding-top: 4rem;
-    padding-bottom: 13.4rem;
-}
-.encerrandoCarro{
-    margin: auto 0;
+    padding-top: 2rem;
+    gap: 5rem;
+  }
+  
+  .contenidoEntero {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 18.2rem;
     overflow-y: scroll;
+  }
+  
+  .encerrandoCarro {
     box-sizing: none;
     -webkit-box-shadow: 1px 1px 18px 0px black;
-}
-.totalCarrito {
+  }
+  
+  .totalCarrito {
     display: flex;
     flex-direction: column;
     position: relative;
-}
-.eliminarBorrar {
+  }
+  
+  .eliminarBorrar {
     display: block;
     position: absolute;
     right: 1.2rem;
@@ -26,72 +33,73 @@
     font-size: 10px;
     font-weight: 700;
     cursor: pointer;
-}
-.productoEnCarrito {
-    
+  }
+  
+  .productoEnCarrito {
     display: flex;
     justify-content: space-evenly;
-    width: 40rem;
+    width: 100%;
     margin-bottom: 6px;
     border-radius: 5px;
-    background-color: #741c44;
-    color: rgb(191, 157, 157);;
-}
-.imagenTotalProducto{
+    background-color: var(--theme-background-color);
+    color: rgb(191, 157, 157);
+  }
+  
+  .imagenTotalProducto {
     height: 100%;
     width: 40%;
-}
-.imagenTotalProducto img {
+  }
+  .imagenTotalProducto img {
     height: 8rem;
-    margin: 0.4rem;  
-}
-.nombreDelProducto{
+    margin: 0.4rem;
+  }
+  .nombreDelProducto {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; 
+    justify-content: space-around;
     width: 60%;
-}
-.numerosCarritos {
+  }
+  .numerosCarritos {
     display: flex;
     justify-content: space-around;
     padding-top: 1.5rem;
     text-align: center;
-}
-.separadorMax{
+  }
+  .separadorMax {
     width: 50%;
-}
-.codigoDescuento {
+  }
+  .codigoDescuento {
     padding: 2.5rem 0;
-    box-sizing: 0px white   ;
-    -webkit-box-shadow: 1px 1px 18px 0px black; 
-    text-align: center; 
+    box-sizing: 0px white;
+    -webkit-box-shadow: 1px 1px 18px 0px black;
+    text-align: center;
     width: 98%;
     margin-left: 1%;
     margin-bottom: 2px;
     border-radius: 6px;
-    background-color: #741c44;
-    color: rgb(191, 157, 157);;
-}
-.cuponDescuento {
+    background-color: var(--theme-background-color);
+    color: rgb(191, 157, 157);
+  }
+  .cuponDescuento {
     text-align: center;
-}
-.barraDeDescuento {
+  }
+  .barraDeDescuento {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     height: 10%;
-}
-.coupon-value{
+  }
+  .coupon-value {
     padding-bottom: 0px;
     display: flex;
     margin: 4px 0;
-}
-.btnAplicar{
+  }
+  .btnAplicar {
     margin-left: 0.5rem;
     margin-top: 4px;
     height: 77%;
     width: 6rem;
-}
-.totalYsubtotal {
+  }
+  .totalYsubtotal {
     display: flex;
     flex-direction: column;
     box-sizing: 0px white;
@@ -100,21 +108,21 @@
     margin-left: 1%;
     margin-bottom: 3rem;
     border-radius: 5px;
-    background: #741c44;
+    background: var(--theme-background-color);
     color: rgb(191, 157, 157);
-}
-.subTotalCarrito {
+  }
+  .subTotalCarrito {
     display: flex;
     margin: 0.5rem 0;
     justify-content: space-between;
     width: 97%;
-    background: #741c44;
-}
-.submit-Compra {
+    background: var(--theme-background-color);
+  }
+  .submit-Compra {
     width: 98%;
     padding: 5px 0;
     margin: 4px 6px;
     color: rgb(191, 157, 157);
     font-weight: 600;
-    background-color: black;
-}
+    background-color: var(--theme-background-color);
+  }

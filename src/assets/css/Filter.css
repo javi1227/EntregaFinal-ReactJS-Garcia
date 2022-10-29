@@ -1,7 +1,7 @@
 /* filter */
 .filter{
     width: 100%;
-    background-color: black;
+    background-color: var(--theme-background-color);
     border-bottom: 1px solid #dc4c2c;
     text-align: center;
 }

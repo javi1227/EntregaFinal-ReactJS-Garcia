@@ -10,7 +10,7 @@ export default function Detalle ({producto}) {
     const {carrito, agregarProducto, quitarProducto} = useContext(CarritoContext)
     const cantProducto = (operacion) => {
         if(operacion == "+") {
-            if(cantidad < producto.stock) {
+            if(cantidad < producto[1].stock) {
                 setCantidad(cantidad +1)
             }
         } else {
@@ -23,18 +23,18 @@ return (
     <>
     <div className="Detalle-total" >
         <div className="imgContenedora">
-            <img src={producto.img} alt="logo"/>
+            <img src={producto[1].img} alt="logo"/>
         </div>
         <div className="descripcionContenedora">
             <div className="textoContenedor">
-                <p>{producto.descripcion}</p>
+                <p>{producto[1].descripcion}</p>
             </div>
             <div className="Totales">
                     <button className='btn btn-dark' onClick={()=> cantProducto("-")}>-</button>
                 <p className='card-text'>{cantidad}</p>
                     <button className='btn btn-dark' onClick={()=> cantProducto("+")}>+</button>
                 <div className="PriceTotal" style={{color: "black"}} >
-                    <p>${producto.price}</p>
+                    <p>${producto[1].price}</p>
                 </div>
                 <> 
                     <button className="BuyTotal" onClick={()=> agregarProducto(producto, cantidad)}>

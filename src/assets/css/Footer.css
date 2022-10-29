@@ -1,6 +1,6 @@
 /* FOOOOOTER */
 .footerDesign {
-    background-color: #741c44;
+    background-color: var(--theme-background-color);
     display: flex;
     justify-content: space-around;
     font-size: small;

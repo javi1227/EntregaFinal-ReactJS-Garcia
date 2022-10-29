@@ -10,15 +10,16 @@
     height: 1.9rem;
 }
 .darkMode2 {
-    background: #343D5B;
+    background: #741c44;
     border-radius: 1000px;
-    border: none;
+    border: 1px solid black;
     position: relative;
     cursor: pointer;
     display: flex;
     outline: none;
     width: 60px;
     height: 1.9rem;
+
 }
 
 .ligthCircle {
@@ -28,7 +29,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: #343D5B;
+    background: #741c44;
     border-radius: 100px;
     -webkit-transition: .3s ease all; 
     transition: .3s ease all;

@@ -32,7 +32,7 @@
     -webkit-box-shadow: 1px 1px 18px 0px rgb(0 0 0 / 30%)
 }
 .contenedorData{
-    background-color:gray;
+    background-color: var(--theme-background-color);
     height: 2rem;
 }
 .contenedorData h4 {
@@ -48,7 +48,7 @@
 .h5Productos{
     color: white;
     text-align: center;
-    background-color: black;
+    background-color: var(--theme-background-color);
     font-size: 9px;
 }
 /* END ITEM LIST CONTAINER */

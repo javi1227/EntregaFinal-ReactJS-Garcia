@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import {collection, doc, addDoc, getFirestore, getDocs, getDoc} from "firebase/firestore"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -18,4 +18,41 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const db = getFirestore()
+
+const cargarBaseDeDatos = async() => {
+  const promise = await fetch ('/json/producto.json');
+  const productos= await promise.json();
+  productos.forEach(async(producto) => {
+    await addDoc(collection(db, "productos"), {
+        nombre: producto.nombre,
+        Category_id: producto.Category_id,
+        name_category: producto.name_category,
+        stock: producto.stock,
+        price: producto.price,
+        img: producto.img,
+        descripcion: producto.descripcion
+    })
+  })
+}
+
+const getProducto = async (id) => {
+  const producto = await getDoc(doc(db, "productos", id))
+  const prod = [producto.id, producto.data()]
+  console.log(prod)
+  return prod
+}
+const searchProducto = async (nombre) => {
+  const producto = await getDoc(doc(db, "productos", nombre))
+  const prod = [producto.id, producto.data()]
+  console.log(prod)
+  return prod
+}
+
+const getProductos = async () => {
+  const productos = await getDocs(collection(db, "productos"))
+  const items = productos.docs.map(producto => [producto.id, producto.data()])
+  return items
+}
+
+export {cargarBaseDeDatos, getProductos, getProducto, searchProducto}

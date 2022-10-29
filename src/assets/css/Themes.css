@@ -1,0 +1,8 @@
+.light {
+    --theme-background-color: var(--color-off-white);
+    --theme-color: var(--color-black);
+}
+.dark {
+    --theme-background-color: var(--color-dark-red);
+    --theme-color: var(--color-white);
+}

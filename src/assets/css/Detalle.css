@@ -5,7 +5,7 @@
     border-radius: 11px;
     border: solid 1px #dc4c2c;
     padding: 2rem;
-    background-color: #7b1d48;
+    background-color: var(--theme-background-color);
 }
 .imgContenedora img{
     width: 20rem;
