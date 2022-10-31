@@ -20,7 +20,7 @@ export default function Detalle ({producto}) {
         }
     }
 return (
-    <>
+    <div className='totalDetail'>
     <div className="Detalle-total" >
         <div className="imgContenedora">
             <img src={producto[1].img} alt="logo"/>
@@ -30,9 +30,11 @@ return (
                 <p>{producto[1].descripcion}</p>
             </div>
             <div className="Totales">
+                <div className="contador">
                     <button className='btn btn-dark' onClick={()=> cantProducto("-")}>-</button>
-                <p className='card-text'>{cantidad}</p>
+                        <p className='p-Productos'>{cantidad}</p>
                     <button className='btn btn-dark' onClick={()=> cantProducto("+")}>+</button>
+                </div>
                 <div className="PriceTotal" style={{color: "black"}} >
                     <p>${producto[1].price}</p>
                 </div>
@@ -61,6 +63,6 @@ return (
 
                 </div>
             </div>
-</>
+</div>
 )
 }

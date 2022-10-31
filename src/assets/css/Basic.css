@@ -20,12 +20,15 @@ list-style: none; /*sacarle las viñetas*/
 p {
 margin: auto;
 }
+body {
+    background-color: var(--theme-background-color);
+}
 #root {
-background-color: var(--color-dark-red);;
 
---color-white: #ffffff;
+
+--color-white: gray;
 --color-black: black;
---color-off-white: #f8f8f8;
+--color-off-white: rgb(216, 212, 212);
 --color-dark-gray: #343d5b;
 --color-dark-red: #7b1d48;
 }

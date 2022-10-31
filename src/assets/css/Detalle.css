@@ -1,7 +1,7 @@
 .Detalle-total{
     display: flex;
     width: 75%;
-    margin: 4rem 16rem ;
+    margin: 0rem 16rem;
     border-radius: 11px;
     border: solid 1px #dc4c2c;
     padding: 2rem;
@@ -65,4 +65,16 @@
     cursor: pointer;
     -webkit-box-shadow: 1px 1px 18px 0px rgb(0 0 0 / 30%)
 
+}
+.totalDetail{
+    background-color: var(--theme-background-color);
+    padding: 4rem 0;
+}
+.contador {
+    display: flex;
+}
+.p-Productos{
+    margin: auto;
+    width: 34px;
+    text-align: center;
 }

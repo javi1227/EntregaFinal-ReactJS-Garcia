@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {collection, doc, addDoc, getFirestore, getDocs, getDoc} from "firebase/firestore"
+import {collection, doc, addDoc, getFirestore, getDocs, getDoc, updateDoc, deleteDoc} from "firebase/firestore"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -54,5 +54,28 @@ const getProductos = async () => {
   const items = productos.docs.map(producto => [producto.id, producto.data()])
   return items
 }
+const updateProducto =async (id, info) => {
+  const estado = await updateDoc(doc(db, "productos", id), info)
+  return estado;
+}
 
-export {cargarBaseDeDatos, getProductos, getProducto, searchProducto}
+const deleteProducto= async(id) => {
+  const estado= await deleteDoc(doc(db,"productos", id))
+  return estado;
+}
+
+const createProducto = async (objProd) =>{
+  const estado =await addDoc(doc(db,"productos"),{
+    nombre: objProd.nombre,
+    Category_id: objProd.Category_id,
+    name_category: objProd.name_category,
+    stock: objProd.stock,
+    price: objProd.price,
+    img: objProd.img,
+    descripcion: objProd.descripcion
+  })
+
+return estado
+}
+
+export {cargarBaseDeDatos, getProductos, getProducto, searchProducto, updateProducto, deleteProducto, createProducto}

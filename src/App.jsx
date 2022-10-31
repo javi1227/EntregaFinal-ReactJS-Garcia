@@ -11,6 +11,7 @@ import ItemListContainer from "./components/ItemListContainer";
 import Categoria from "./components/content/Categoria";
 import Contacto from "./components/content/Contacto";
 import { DarkModeContext } from "../src/context/darkModeContext";
+import Error404 from "./components/content/Error404";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -18,21 +19,18 @@ function App() {
   return (
     <div className={!darkMode ? "light" : "dark"}>
       <BrowserRouter>
-        <NavBar />
-        <Filter />
-        <Routes>
-          <Route path="/Carrito" element={<Carrito />} />
-          <Route path="/" element={<ItemListContainer />} />
-          <Route path="/Contacto" element={<Contacto />} />
-          <Route path="/producto/:id" element={<Producto />} />
-          <Route path="/Categoria/:name_category" element={<Categoria />} />
-          <Route
-            path="/ItemDetailContainer"
-            element={<ItemDetailContainer />}
-          />
-          <Route path="*" element={<h1>Error 404</h1>} />
-        </Routes>
-        <Footer />
+          <NavBar />
+          <Filter />
+          <Routes>
+              <Route path="/Carrito" element={<Carrito />} />
+              <Route path="/" element={<ItemListContainer />} />
+              <Route path="/Contacto" element={<Contacto />} />
+              <Route path="/producto/:id" element={<Producto />} />
+              <Route path="/Categoria/:name_category" element={<Categoria />} />
+              <Route path="/ItemDetailContainer" element={<ItemDetailContainer />}/>
+              <Route path="*" element={<Error404/>}/>
+          </Routes>
+          <Footer />
       </BrowserRouter>
     </div>
   );

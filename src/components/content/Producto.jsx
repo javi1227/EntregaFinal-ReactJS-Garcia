@@ -11,14 +11,12 @@ export default function Producto() {
        getProducto(id).then(prod => {
         setProducto(prod)
     })
-   
     }, [])
 
     if (producto.length != 0) {
         return (
                 <>
                     <Detalle producto={producto}/>
-       
                 </>
         )
     }}

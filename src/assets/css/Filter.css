@@ -1,7 +1,7 @@
 /* filter */
 .filter{
     width: 100%;
-    background-color: var(--theme-background-color);
+    background-color: black;
     border-bottom: 1px solid #dc4c2c;
     text-align: center;
 }
@@ -9,12 +9,13 @@
 
 .productosConteiner {
     display: grid;
-    align-content: center;
-    width: 80%;
+    background-color: var(--theme-background-color);
     margin: 0 auto;
     text-align: center;
     grid-template-columns: auto auto auto auto;
-    gap: 20px;
+    gap: 67px;
+    width: 100%;
+    justify-content: center;
 }
 .icon1 {
     font-size: 1.3rem;

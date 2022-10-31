@@ -34,7 +34,7 @@ const Carrito = () => {
                     <div className="nombreDelProducto">
                       <h3>{producto.nombre}</h3>
                       <div className="numerosCarritos">
-                        <span>Cantidad: {producto.stock}</span>
+                        <span>Cantidad: {producto.stock[0]}</span>
                         <span>Precio: ${producto.price}</span>
                       </div>
                     </div>

@@ -1,16 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import { CarritoProvider } from './context/CarritoContext';
-import App from './App';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { CarritoProvider } from "./context/CarritoContext";
+import App from "./App";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import { DarkModeProvider } from "./context/darkModeContext";
-// import './utils/funcionesUtiles.js'
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// import './utils/bd-firebase'
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-<CarritoProvider>
+  <CarritoProvider>
     <DarkModeProvider>
-        <App />
+      <App />
     </DarkModeProvider>
-</CarritoProvider>
+  </CarritoProvider>
 );

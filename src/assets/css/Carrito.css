@@ -126,3 +126,11 @@
     font-weight: 600;
     background-color: var(--theme-background-color);
   }
+
+  @media (min-width: 1200px){
+    .container {
+        max-width: 100%;
+      background: var(--theme-background-color);
+    }
+
+  }

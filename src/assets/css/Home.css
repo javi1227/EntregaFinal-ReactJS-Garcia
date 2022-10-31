@@ -13,7 +13,6 @@
     height: 23rem;
     background-color: var(--theme-background-color);
     background-clip: border-box;
-    border: 1px solid black;
 }
 
 .card-image{

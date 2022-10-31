@@ -1,6 +1,5 @@
-/* body {
-    background-color: black;
-    background-color: antiquewhite;
+:root {
+    background-color: var(--theme-background-color);
     transition: all 1s ease-out;
 
-} */
+}
