@@ -1,13 +1,15 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import { getProductos } from '../utils/firebase';
 import {Link} from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../assets/css/Home.css';
+import { CarritoContext } from '../context/CarritoContext';
 
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([]);
+    const {agregarProducto} = useContext(CarritoContext)
     
     useEffect(() => {
 
@@ -29,7 +31,14 @@ const ItemListContainer = () => {
                                 </div>
                                 <div className="card-btn-carrito">
                                     <button className='btn5'><Link to={`/producto/${producto[0]}`}>Ver Producto</Link></button>
-                                    <Link to='#'><button className='Button-Carrito' onClick={mensaje}>Agregar al carrito</button></Link>
+                                    <Link to='#'>
+                                        <button 
+                                            className='Button-Carrito'
+                                            onClick={()=>{ 
+                                                agregarProducto(producto, 1)
+                                                mensaje()
+                                            }} 
+                                            >Agregar al carrito</button></Link>
                                 </div>
                     </div>
                 </div>          
