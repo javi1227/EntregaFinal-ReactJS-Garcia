@@ -30,7 +30,7 @@ const ItemListContainer = () => {
                                     </span>
                                 </div>
                                 <div className="card-btn-carrito">
-                                    <button className='btn5'><Link to={`/producto/${producto[0]}`}>Ver Producto</Link></button>
+                                    <button className='btn5'><Link to={`/producto/${producto[0]}`}>Ver Detalles</Link></button>
                                     <Link to='#'>
                                         <button 
                                             className='Button-Carrito'

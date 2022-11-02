@@ -77,5 +77,21 @@ const createProducto = async (objProd) =>{
 
 return estado
 }
+const createOrdenCompra = async(preTotal, nombre, apellido, email, dni, direccion) => {
+  const ordenCompra= await addDoc(collection(db,"ordenCompra"), {
+    nombre: nombre,
+    apellido: apellido,
+    email:email,
+    dni: dni,
+    direccion: direccion,
+    precioTotal : preTotal
+  })
+  return ordenCompra;
+}
+const getOrdenCompra =async (id) =>{
+  const ordenCompra = await getDoc(doc(db,"ordenCompra", id))
+  return ordenCompra
+}
 
-export {cargarBaseDeDatos, getProductos, getProducto, searchProducto, updateProducto, deleteProducto, createProducto}
+
+export {cargarBaseDeDatos, getProductos, getProducto, searchProducto, updateProducto, deleteProducto, createProducto, createOrdenCompra, getOrdenCompra}

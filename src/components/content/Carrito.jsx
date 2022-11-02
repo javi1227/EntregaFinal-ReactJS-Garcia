@@ -16,16 +16,16 @@ const Carrito = () => {
       {carrito.length !== 0 ? (
         <>
           <div className="contenidoEntero">
+          <h1 className="tituloInfoCarrito">Figuritas a comprar</h1>
             {carrito.map((producto) => (
               <div className="encerrandoCarro">
                 <div className="totalCarrito">
                   <div className="eliminarBorrar">
-                    <button
-                      className="btn5"
-                      onClick={() => quitarProducto(producto)}
-                    >
-                      Eliminar
-                    </button>
+                  <span className="material-symbols-outlined btnEditCarrito"  
+                  onClick={() => 
+                  quitarProducto(producto)}>
+                        delete
+                  </span>
                   </div>
                   <div className="productoEnCarrito">
                     <div className="imagenTotalProducto">
@@ -56,7 +56,6 @@ const Carrito = () => {
                   <button
                     type="submit"
                     className="btnAplicar"
-                    style={{ background: "black", color: "white" }}
                   >
                     APLICAR
                   </button>
@@ -98,14 +97,18 @@ const Carrito = () => {
         </>
       ) : (
         <>
-          <h1>
-            No existen elementos en el carrito
-            <button className="btn btn-dark">
-              <Link to="/" style={{ color: "white" }}>
-                Ir al Home
-              </Link>
-            </button>
-          </h1>
+        <div className="contCarritoVacio">
+          <span className="material-symbols-outlined iconG" >
+              production_quantity_limits
+          </span>
+          <h1> No existen elementos en el carrito </h1>
+        <button className="btnHome">
+          <Link to="/" style={{ color: "white" }}>
+            Ir al Home
+          </Link>
+        </button>
+          
+        </div>
         </>
       )}
     </div>
