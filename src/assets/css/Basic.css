@@ -37,4 +37,5 @@ body {
 .row {
 justify-content: center;
 gap: 2rem;
+background-color: var(--theme-background-color);
 }

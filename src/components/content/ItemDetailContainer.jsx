@@ -9,10 +9,10 @@ import 'react-toastify/dist/ReactToastify.css';
 export default function Detalle ({producto}) {
     const [cantidad, setCantidad] = useState(1);
     
-    const {carrito, agregarProducto, quitarProducto} = useContext(CarritoContext)
+    const {agregarProducto, quitarProducto} = useContext(CarritoContext)
     const cantProducto = (operacion) => {
         if(operacion == "+") {
-            if(cantidad < producto[1].stock) {
+            if(cantidad < producto.stock) {
                 setCantidad(cantidad +1)
             }
         } else {
@@ -23,7 +23,7 @@ export default function Detalle ({producto}) {
     }
     const mensaje =() =>{
         toast.success('PRODUCTO AGREGADO!', {
-            osition: "top-right",
+            osition: "bottom-right",
             autoClose: 1000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -36,11 +36,11 @@ return (
     <div className='totalDetail'>
     <div className="Detalle-total" >
         <div className="imgContenedora">
-            <img src={producto[1].img} alt="logo"/>
+            <img src={producto.img} alt="logo"/>
         </div>
         <div className="descripcionContenedora">
             <div className="textoContenedor">
-                <p>{producto[1].descripcion}</p>
+                <p>{producto.descripcion}</p>
             </div>
             <div className="Totales">
                 <div className="contador">
@@ -49,13 +49,13 @@ return (
                     <button className='btn btn-dark' onClick={()=> cantProducto("+")}>+</button>
                 </div>
                 <div className="PriceTotal" style={{color: "black"}} >
-                    <p>${producto[1].price}</p>
+                    <p>${producto.price}</p>
                 </div>
                 <> 
                     <button 
                             className="BuyTotal"  
                             onClick={()=>{ 
-                                    agregarProducto(producto, 1)
+                                    agregarProducto(producto,cantidad)
                                     mensaje()
                             }}>
                         <p><FontAwesomeIcon icon={faCartShopping} /></p>

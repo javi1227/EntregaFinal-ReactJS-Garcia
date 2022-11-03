@@ -1,16 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CarritoContext } from "../../context/CarritoContext";
 
 const Carrito = () => {
-  const { carrito, agregarProducto, quitarProducto } =
+  const { carrito, quitarProducto, setCarrito } =
     useContext(CarritoContext);
 
+    useEffect(() => {
+
+    }, []);
+
   const total = carrito.reduce(
-    (total, producto) => total + producto.stock * producto.price,
+    (total, producto) => total + producto.cantidad * producto.price,
     0
   );
-
   return (
     <div className="container">
       {carrito.length !== 0 ? (
@@ -34,7 +37,7 @@ const Carrito = () => {
                     <div className="nombreDelProducto">
                       <h3>{producto.nombre}</h3>
                       <div className="numerosCarritos">
-                        <span>Cantidad: {producto.stock[0]}</span>
+                        <span>Cantidad: {producto.cantidad}</span>
                         <span>Precio: ${producto.price}</span>
                       </div>
                     </div>
@@ -48,15 +51,8 @@ const Carrito = () => {
               <h4>¿Tenes un código de descuento?</h4>
               <div className="cuponDescuento">
                 <div className="barraDeDescuento">
-                  <input
-                    type="text"
-                    Name="coupon-value"
-                    placeholder="Insertar Código"
-                  />
-                  <button
-                    type="submit"
-                    className="btnAplicar"
-                  >
+                  <input type="text" Name="coupon-value" placeholder="Insertar Código"/>
+                  <button type="submit" className="btnAplicar">
                     APLICAR
                   </button>
                 </div>
@@ -73,7 +69,7 @@ const Carrito = () => {
                   }}
                 >
                   <span>Precio Total :</span>
-                  <span>$ {total}</span>
+                  <span>${total}</span>
                 </div>
                 <span>
                   <button

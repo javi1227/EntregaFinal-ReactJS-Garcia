@@ -38,8 +38,8 @@ const cargarBaseDeDatos = async() => {
 
 const getProducto = async (id) => {
   const producto = await getDoc(doc(db, "productos", id))
-  const prod = [producto.id, producto.data()]
-  console.log(prod)
+  const prod = producto.data()
+  prod.id = producto.id
   return prod
 }
 const searchProducto = async (nombre) => {
@@ -51,7 +51,11 @@ const searchProducto = async (nombre) => {
 
 const getProductos = async () => {
   const productos = await getDocs(collection(db, "productos"))
-  const items = productos.docs.map(producto => [producto.id, producto.data()])
+  const items = productos.docs.map(producto => {
+      const item= producto.data()
+      item.id= producto.id
+      return item
+  })
   return items
 }
 const updateProducto =async (id, info) => {

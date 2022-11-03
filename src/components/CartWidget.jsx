@@ -16,10 +16,10 @@ const CartWidget = () => {
                 <Link to="/"><FontAwesomeIcon className='main4' icon={faHouse} /></Link>
                 <figcaption>Home</figcaption>
             </li>
-            <li className="main2">
+            {/* <li className="main2">
                 <Link to="#"><FontAwesomeIcon className='main4'icon={faStore} /></Link>
                 <figcaption>Tienda</figcaption>
-            </li>
+            </li> */}
             <li className="main3">
                 <Link to="/Carrito"><FontAwesomeIcon className='main4'icon={faCartShopping} /></Link>
                 <figcaption>Carrito</figcaption>
