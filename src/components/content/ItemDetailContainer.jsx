@@ -4,8 +4,6 @@ import images from '../../assets/images/Messi.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import '../.././assets/css/Detalle.css';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 export default function Detalle ({producto}) {
     const [cantidad, setCantidad] = useState(1);
     
@@ -20,17 +18,6 @@ export default function Detalle ({producto}) {
                 setCantidad(cantidad -1)
             }
         }
-    }
-    const mensaje =() =>{
-        toast.success('PRODUCTO AGREGADO!', {
-            osition: "bottom-right",
-            autoClose: 1000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            });
     }
 return (
     <div className='totalDetail'>
@@ -56,7 +43,6 @@ return (
                             className="BuyTotal"  
                             onClick={()=>{ 
                                     agregarProducto(producto,cantidad)
-                                    mensaje()
                             }}>
                         <p><FontAwesomeIcon icon={faCartShopping} /></p>
                     </button>
@@ -81,7 +67,6 @@ return (
 
                 </div>
             </div>
-            <ToastContainer />
 </div>
 )
 }

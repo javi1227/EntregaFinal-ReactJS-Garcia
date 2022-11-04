@@ -1,13 +1,15 @@
-import {useState,useEffect} from 'react';
+import {useState,useEffect, useContext} from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { consultarBDD } from '../../utils/funcionesUtiles';
+import { getProductos } from '../../utils/firebase';
+import { CarritoContext } from '../../context/CarritoContext';
 
 const Categoria = () => {
         const [productos, setProductos] = useState([]);
         const {name_category}=useParams()
+        const {agregarProducto} = useContext(CarritoContext)
 
         useEffect(()=>{
-            consultarBDD('/json/producto.json')
+            getProductos()
             .then(productos =>{
                 const productosCategoria = productos.filter(producto => producto.name_category ===name_category)
                     const cardProducto = productosCategoria.map(producto => 
@@ -22,8 +24,10 @@ const Categoria = () => {
                                         </span>
                                     </div>
                                     <div className="card-btn-carrito">
-                                        <button className='btn5'><Link to={`/producto/${producto.id}`}>Ver Producto</Link></button>
-                                        <Link to='#'><button className='Button-Carrito'>Agregar al carrito</button></Link>
+                                        <button className='btn5'><Link to={`/producto/${producto.id}`}>Ver Detalles</Link></button>
+                                        <Link to='#'><button className='Button-Carrito' onClick={()=>{agregarProducto(producto, 1)
+                                            }} 
+                                            >Agregar al carrito</button></Link>
                                     </div>
                                 </div>
                             </div>          

@@ -40,6 +40,7 @@ const CarritoProvider = ({children}) => {
     aux.splice(indice,1)
     setCarrito(structuredClone(aux))
   }
+  const clearCart = () => setCarrito([])
 
   const mensajeOk =()=>{
     toast.success('PRODUCTO AGREGADO!', {
@@ -66,7 +67,7 @@ const CarritoProvider = ({children}) => {
   
   return (
     <>
-        <CarritoContext.Provider value={{carrito, agregarProducto, quitarProducto, setCarrito}}>
+        <CarritoContext.Provider value={{carrito, agregarProducto, quitarProducto, setCarrito, clearCart}}>
           {children}
         </CarritoContext.Provider>
         <ToastContainer />

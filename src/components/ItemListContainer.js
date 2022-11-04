@@ -14,7 +14,6 @@ const ItemListContainer = () => {
 
         
         getProductos().then(productos => {
-                console.log(productos);
             const cardProducto = productos.map(producto => 
             <div className='contenedorItem' key={producto}>
                 <div className='cardsContainer'>

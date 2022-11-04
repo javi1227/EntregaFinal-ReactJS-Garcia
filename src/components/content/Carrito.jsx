@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { CarritoContext } from "../../context/CarritoContext";
 
 const Carrito = () => {
-  const { carrito, quitarProducto, setCarrito } =
+  const { carrito, quitarProducto, setCarrito, clearCart } =
     useContext(CarritoContext);
 
     useEffect(() => {
@@ -45,6 +45,7 @@ const Carrito = () => {
                 </div>
               </div>
             ))}
+            <button className="BorrarCarrito" onClick={()=>clearCart()}>Borrar Carrito <i className="bi bi-trash-fill"></i></button>
           </div>
           <div className="separadorMax">
             <div className="codigoDescuento">
