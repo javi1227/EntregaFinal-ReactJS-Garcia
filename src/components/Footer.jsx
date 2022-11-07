@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="Seguinos-footer">
         <h3>SEGUINOS EN</h3>
         <li className="footerIcon">
-          <Link to="#">
+          <Link to="https://www.github.com/javi1227">
             <i className="icon1 bi bi-github"></i>
           </Link>
           <Link to="#">

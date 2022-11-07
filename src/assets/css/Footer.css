@@ -5,7 +5,7 @@
     justify-content: space-around;
     font-size: small;
     border-top: 4px #dc4c2c solid;
-    color: white;
+    color: var(--color-white);
 }
 .Contacto-footer .Politicas-footer{
     display: flex;

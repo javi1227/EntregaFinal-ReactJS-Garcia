@@ -45,7 +45,6 @@ const getProducto = async (id) => {
 const searchProducto = async (nombre) => {
   const producto = await getDoc(doc(db, "productos", nombre))
   const prod = [producto.id, producto.data()]
-  console.log(prod)
   return prod
 }
 

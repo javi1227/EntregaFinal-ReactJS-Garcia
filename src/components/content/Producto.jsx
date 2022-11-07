@@ -9,7 +9,6 @@ export default function Producto() {
     const {id} = useParams()
     useEffect(() => {
        getProducto(id).then(prod => {
-        console.log(prod,"prodqweq");
         setProducto(prod)
     })
     }, [])
