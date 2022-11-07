@@ -112,6 +112,9 @@
   padding: 0px 5px;
   font-size: 12px;
 }
+.contadorCartNone{
+  display: none;
+}
 .main1:hover {
   color: white;
 }

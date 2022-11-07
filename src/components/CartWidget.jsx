@@ -18,7 +18,7 @@ const CartWidget = () => {
             </li>
             <li className="main3">
                 <Link to="/Carrito"><FontAwesomeIcon className='main4'icon={faCartShopping} /></Link>
-            <p className='contadorCart'>{productosTotales()}</p>
+                <p className={productosTotales() === 0? 'contadorCartNone' : 'contadorCart'}>{productosTotales()}</p>
                 <figcaption>Carrito</figcaption>
             </li>
 
