@@ -83,3 +83,18 @@
     width: 34px;
     text-align: center;
 }
+
+
+/* media query */
+@media(max-width:320px) {
+    .totalDetail {
+        display: flex;
+        flex-direction: column;
+    }
+    .Detalle-total {
+        display: flex;
+        width: 75%;
+        margin: auto;
+    }
+
+} 

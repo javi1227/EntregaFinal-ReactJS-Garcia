@@ -42,6 +42,8 @@ const CarritoProvider = ({children}) => {
   }
   const clearCart = () => setCarrito([])
 
+  const productosTotales =() => carrito.reduce((acumulador, productoActual) => acumulador + productoActual.cantidad, 0);
+
   const mensajeOk =()=>{
     toast.success('PRODUCTO AGREGADO!', {
       position: "bottom-right",
@@ -67,7 +69,7 @@ const CarritoProvider = ({children}) => {
   
   return (
     <>
-        <CarritoContext.Provider value={{carrito, agregarProducto, quitarProducto, setCarrito, clearCart}}>
+        <CarritoContext.Provider value={{carrito, agregarProducto, quitarProducto, setCarrito, clearCart,  productosTotales}}>
           {children}
         </CarritoContext.Provider>
         <ToastContainer />

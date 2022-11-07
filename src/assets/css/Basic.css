@@ -39,3 +39,9 @@ justify-content: center;
 gap: 2rem;
 background-color: var(--theme-background-color);
 }
+
+@media(max-width:768px) {
+    body {
+        width: 100%;
+    }
+}

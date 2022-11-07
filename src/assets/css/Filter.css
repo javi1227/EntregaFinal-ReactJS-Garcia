@@ -23,3 +23,25 @@
 }
 
 /* end filter */
+
+@media(max-width:768px) {
+    .productosConteiner {
+        margin: 0 auto;
+        grid-template-columns:auto auto;
+        gap: 67px;
+    }
+}
+@media(max-width:540px) {
+    .productosConteiner {
+        margin: 0 auto;
+        grid-template-columns:auto auto;
+        gap: 20px;
+    }
+}
+@media(max-width:320px) {
+    .productosConteiner {
+        margin: 0 auto;
+        grid-template-columns:auto;
+        gap: 20px;
+    }
+} 

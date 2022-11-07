@@ -16,7 +16,6 @@
 }
 .logo-navBar img {
     width: 6rem;
-    height: rem;
 }
 /* search */
 /* SearchBar */
@@ -31,7 +30,6 @@
     padding: 0.5rem;
     background-color: var(--theme-background-color);
     color: gray;
-
 }
   .header_searchBar form {
     align-items: center;
@@ -93,9 +91,26 @@
     height: 1rem;
 }
 
-.main1, .main2 , .main3{
+.main1, .main2{
     margin: 0 1rem ;
     color: var(--theme-background-color);
+}
+.main3 {
+  position: relative;
+  margin: 0 1rem ;
+  color: var(--theme-background-color);
+}
+.contadorCart{
+  position: absolute;
+  bottom: 11px;
+  left: 17px;
+  color: antiquewhite;
+  background-color: rgb(220, 76, 44);
+  border-radius: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 5px;
+  font-size: 12px;
 }
 .main1:hover {
   color: white;
@@ -125,4 +140,18 @@
     height: 1rem;
 }
 
+
 /* END NAV-BAR */
+
+@media(max-width:514px) {
+  .header_searchBar {
+    display: none;
+}
+.logo-navBar{
+  height: 58%;
+}
+.logo-navBar img {
+  width: 4.2rem;
+  height: 3.2rem;
+}
+} 
