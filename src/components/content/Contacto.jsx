@@ -4,7 +4,6 @@ const Contacto = () => {
     const datosFormulario = React.useRef()
     const consultarForm =(e)=> {
         e.preventDefault()
-        console.log(datosFormulario);
         const datForm= new FormData(datosFormulario.current)
         console.log(Object.fromEntries(datForm));
 

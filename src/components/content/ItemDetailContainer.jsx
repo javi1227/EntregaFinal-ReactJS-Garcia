@@ -7,9 +7,9 @@ import '../.././assets/css/Detalle.css';
 export default function Detalle ({producto}) {
     const [cantidad, setCantidad] = useState(1);
     
-    const {agregarProducto, quitarProducto} = useContext(CarritoContext)
+    const {agregarProducto} = useContext(CarritoContext)
     const cantProducto = (operacion) => {
-        if(operacion == "+") {
+        if(operacion === "+") {
             if(cantidad < producto.stock) {
                 setCantidad(cantidad +1)
             }

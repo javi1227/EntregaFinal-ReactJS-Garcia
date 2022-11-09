@@ -1,19 +1,32 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CarritoContext } from "../../context/CarritoContext";
+import codes from "../../partials/Codes";
 
 const Carrito = () => {
-  const { carrito, quitarProducto, setCarrito, clearCart } =
-    useContext(CarritoContext);
+  const [codigo, setCodigo] = useState("");
+  const [discount, setDiscount] = useState(codes);
+  const { carrito, quitarProducto, clearCart } =
+  useContext(CarritoContext);
+  const [total, setTotal] = useState(carrito.reduce((total, producto) => total + producto.cantidad * producto.price,0));
 
-    useEffect(() => {
-
-    }, []);
-
-  const total = carrito.reduce(
-    (total, producto) => total + producto.cantidad * producto.price,
-    0
-  );
+    // let total = carrito.reduce(
+    //   (total, producto) => total + producto.cantidad * producto.price,
+    //   0
+    //   );
+      const applyDiscount = ()=>{
+        if (
+          discount.includes(codigo)
+        ) {
+          setTotal(total-(total*0.1))
+          setDiscount(discount.filter(value=>value !== codigo))
+          alert("descuento aplicado")
+        } else {
+          alert("codigo invalido")
+        }
+      }
+      
+      
   return (
     <div className="container">
       {carrito.length !== 0 ? (
@@ -52,8 +65,8 @@ const Carrito = () => {
               <h4>¿Tenes un código de descuento?</h4>
               <div className="cuponDescuento">
                 <div className="barraDeDescuento">
-                  <input type="text" Name="coupon-value" placeholder="Insertar Código"/>
-                  <button type="submit" className="btnAplicar">
+                  <input type="text" Name="coupon-value" onChange={(event)=>setCodigo(event.target.value)} placeholder="Insertar Código"/>
+                  <button type="submit" className="btnAplicar" onClick={applyDiscount}>
                     APLICAR
                   </button>
                 </div>

@@ -10,7 +10,7 @@
 .productosConteiner {
     display: grid;
     background-color: var(--theme-background-color);
-    margin: 0 auto;
+    padding:  2rem 0;
     text-align: center;
     grid-template-columns: auto auto auto auto;
     gap: 67px;
