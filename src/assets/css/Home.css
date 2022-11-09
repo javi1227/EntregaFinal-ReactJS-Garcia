@@ -18,7 +18,6 @@
 .card-image{
     width: 98.6%;
     height: 317px;
-    /* object-fit: cover; */
     display: block;
     position: relative;
     cursor: pointer;

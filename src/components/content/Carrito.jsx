@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CarritoContext } from "../../context/CarritoContext";
 import codes from "../../partials/Codes";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Carrito = () => {
   const [codigo, setCodigo] = useState("");
@@ -14,15 +16,39 @@ const Carrito = () => {
     //   (total, producto) => total + producto.cantidad * producto.price,
     //   0
     //   );
+    const DiscountNot =() =>{
+      toast.error('CÓDIGO INVALIDO', {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      })
+    }
+
+    const DiscountGod =() =>{
+      toast.success('DESCUENTO AGREGADO!', {
+        position: "top-center",
+        autoClose: 1000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });  
+    }
+
       const applyDiscount = ()=>{
         if (
           discount.includes(codigo)
         ) {
           setTotal(total-(total*0.1))
           setDiscount(discount.filter(value=>value !== codigo))
-          alert("descuento aplicado")
+          DiscountGod()
         } else {
-          alert("codigo invalido")
+          DiscountNot()
         }
       }
       
@@ -86,11 +112,7 @@ const Carrito = () => {
                   <span>${total}</span>
                 </div>
                 <span>
-                  <button
-                    className="submit-Compra"
-                    type="submit"
-                    style={{ background: "black", color: "#dc4c2c" }}
-                  >
+                  <button className="submit-Compra" type="submit" style={{ background: "black", color: "#dc4c2c" }}>
                     FINALIZAR COMPRA
                   </button>
                 </span>
@@ -121,6 +143,7 @@ const Carrito = () => {
         </div>
         </>
       )}
+  <ToastContainer />
     </div>
   );
 };

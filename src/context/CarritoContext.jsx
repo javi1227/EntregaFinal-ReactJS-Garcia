@@ -66,7 +66,7 @@ const CarritoProvider = ({children}) => {
       progress: undefined,
     })
   }
-  
+
   return (
     <>
         <CarritoContext.Provider value={{carrito, agregarProducto, quitarProducto, setCarrito, clearCart,  productosTotales}}>
