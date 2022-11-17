@@ -158,6 +158,46 @@
         "price": 79,
         "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FBenzema.png?alt=media&token=d32ed8c3-a99b-42bf-a207-4b3b4dd4800e",
         "descripcion": "Karim Benzema es un futbolista francés de ascendencia argelina​​ que juega como delantero en el Real Madrid Club de Fútbol de la Primera División de España desde la temporada 2009-10.​"
+    },
+    {
+        "id": 17,
+        "Category_id": 5,
+        "name_category": "Legendarias",
+        "nombre": "Diego Maradona",
+        "stock": 1,
+        "price": 99,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FMaradona.png?alt=media&token=488cd4fa-e583-4866-88ff-cbdaa451288b",
+        "descripcion": "Diego Armando Maradona​ ​ fue un futbolista y entrenador argentino. Como jugador, se desempeñó como mediocampista ofensivo o delantero, y es reconocido por numerosos especialistas, ​​ exfutbolistas y personalidades internacionales​ como el mejor de la historia.​​"
+    },
+    {
+        "id": 18,
+        "Category_id": 5,
+        "name_category": "Legendarias",
+        "nombre": "Roman Riquelme",
+        "stock": 1,
+        "price": 99,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FRiquelme.png?alt=media&token=c6076bcd-b3a3-4b8c-918b-d23e56dff43f",
+        "descripcion": "Juan Román Riquelme es un exfutbolista argentino, y actual vicepresidente y director deportivo del Club Atlético Boca Juniors.​ Un emblema del 'clásico número 10', Riquelme se destacó como uno de los más aclamados mediocampistas de su generación, y uno de los últimos referentes de su posición.​​​​​"
+    },
+    {
+        "id": 19,
+        "Category_id": 5,
+        "name_category": "Legendarias",
+        "nombre": "Ronaldo Nazario",
+        "stock": 1,
+        "price": 99,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FNazario.png?alt=media&token=52d2f4c5-46d9-4d8b-b15f-f1081d09fc34",
+        "descripcion": "Ronaldo Luís Nazário de Lima, ​ conocido deportivamente como Ronaldo, ​ es un exfutbolista brasileño y jugador histórico del fútbol europeo. Es propietario del Real Valladolid Club de Fútbol español y del Cruzeiro Esporte Clube brasileño.​"
+    },
+    {
+        "id": 20,
+        "Category_id": 5,
+        "name_category": "Legendarias",
+        "nombre": "Ronaldinho",
+        "stock": 1,
+        "price": 99,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FRonaldinho.png?alt=media&token=d931defb-eb81-4580-9f4c-8dd6df651047",
+        "descripcion": "Ronaldo de Assis Moreira, conocido como Ronaldinho Gaúcho o simplemente Ronaldinho, ​ es un exjugador de fútbol brasileño nacionalizado español que se desempeñaba como centrocampista o delantero. Es mundialmente reconocido como uno de los talentos más grandes en la historia de dicho deporte.​"
     }
 
 

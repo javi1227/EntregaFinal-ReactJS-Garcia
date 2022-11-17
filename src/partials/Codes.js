@@ -1,3 +1,3 @@
-const codes =["cabj", "mega"];
+const codes =["cabj", "messi+10"];
 
 export default codes;

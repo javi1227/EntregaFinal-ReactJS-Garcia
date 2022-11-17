@@ -40,7 +40,7 @@ const Categoria = () => {
         }, [name_category]);
 
     return (
-    <div className='row'>
+    <div className='rowCategories' style={{display:"flex",gap:" 67px", padding:"3rem",    backgroundColor: "var(--theme-background-color)"}}>
         {productos}
     </div>
 )

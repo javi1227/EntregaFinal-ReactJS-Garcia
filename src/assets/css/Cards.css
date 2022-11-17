@@ -1,0 +1,85 @@
+.cardsContainer {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-auto-rows: auto;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.card{
+    position: relative;
+    height: 23rem;
+    background-color: var(--theme-background-color);
+    background-clip: border-box;
+}
+
+.card-image{
+    width: 98.6%;
+    height: 317px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin-left: 1.5px;
+}
+
+.card .card-contenido {
+    /* line-height: 1.5; */
+    font-size: 17px;
+    padding: 15px;
+    background: #fafafa;
+ 
+}
+
+.card-contenido .price{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-color: #dc4c2c;
+    color: white;
+    transform: translateX(-1px);
+    visibility: hidden;
+    transition: all 600ms ease-in-out;
+    box-shadow: 2px 3px 4px black;
+    padding: 2px;
+    border-radius: 0 10px 10px 0;
+    width: 2.5rem;
+}
+
+.card:hover .card-contenido .price{
+    visibility: visible;
+    width: 3rem;
+    transform: translateX(0);
+}
+
+.card .card-contenido .favorite{
+    position: absolute;
+    right: 10px;
+    top: 278px;
+    cursor: pointer;
+    display: block;
+}
+
+.card .card-contenido .favorite:hover svg{
+    fill: aqua;
+
+  }
+
+.card .card-btn-carrito{
+    display: flex;
+    flex-direction: column;
+        text-align: center;
+        background-color: var(--theme-background-color);
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        border: black;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .boton-carrito , .boton-products{
+    border: 0.1px solid gray;
+    background-color: orange;
+    color: black;
+}

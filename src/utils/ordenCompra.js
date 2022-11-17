@@ -1,20 +1,18 @@
 import {createOrdenCompra, getOrdenCompra} from './firebase.js'
 
 const producto = { 
-    "nombre": "Pepe SA",
-    "marca": "Pepito",
-    "modelo": "XYZ",
-    "precio": 100000,
-    "idCategoria": 1,
-    "stock": 25,
-    "img": "https://firebasestorage.googleapis.com/v0/b/react-34755-2022-5baa8.appspot.com/o/Imagenes%2Fnotebook-lenovo.jpg?alt=media&token=980d86d4-eaa4-4c40-8a53-83c754982c1d",
-    "Direccion": "Calle Falsa 123"
+    "nombre": "Diogo Costa",
+    "price": 35,
+    "Category_id": 3,
+    "stock": 3,
+    "img": "https://firebasestorage.googleapis.com/v0/b/react-coder-house22.appspot.com/o/imagenes%20cartas%2FDiogo-costa.png?alt=media&token=9c5bdf13-e628-48c1-ba15-bb939ec29174",
+    "Direccion": "Qatar 2022"
 }
 
 
 
-createOrdenCompra(120000, "Pepito", "Perez", "p@p.com", 123123, "Calle Falsa 123").then(orden => {
-    console.log(orden.id)
+createOrdenCompra(35, "Diogo", "Costa", "qatar2022@hotmail.com", 18122022, "Qatar 2022").then(orden => {
+    alert(orden)
 })
 
 getOrdenCompra("UTKHpA46Uvs43P3Jh5IX").then(orden => {

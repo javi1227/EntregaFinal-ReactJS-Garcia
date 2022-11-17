@@ -12,6 +12,8 @@ export default function Filter() {
               <Link className="dropdown-item" to={'/categoria/Brasil'}>Brasil</Link>
               <Link className="dropdown-item" to={'/categoria/Portugal'}>Portugal</Link>
               <Link className="dropdown-item" to={'/categoria/Francia'}>Francia</Link>
+              <Link className="dropdown-item" to={'/categoria/Legendarias'}>Premium</Link>
+
             </div>
     </div>
   )
