@@ -5,7 +5,6 @@
     justify-content: space-around;
     font-size: small;
     border-top: 4px #dc4c2c solid;
-    color: var(--color-white);
 }
 .Contacto-footer .Politicas-footer{
     display: flex;
@@ -14,6 +13,9 @@
 }
 .Contacto-footer h3 , .Politicas-footer h3 , .Seguinos-footer h3{
     color: #dc4c2c;
+}
+.Contacto-footer p , .Politicas-footer p , .Seguinos-footer p{
+    color: var( --theme-color);
 }
 .Seguinos-footer {
     display: flex;

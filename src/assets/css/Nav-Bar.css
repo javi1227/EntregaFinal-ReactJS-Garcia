@@ -55,7 +55,7 @@
     background-color: var(--theme-background-color);
     border: none;
     border-radius: 5px;
-    color: gray;
+    color: var( --theme-color);
     font-size: 1.2rem;
     height: 2.5rem;
     width: 2rem;

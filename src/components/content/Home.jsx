@@ -50,12 +50,12 @@ const Home = () => {
                             <p>Te faltan figuritas para llenar tu albúm Goat? Aquí podrás comprar esa figurita dificíl sin problemas.</p>
                             <p>Siguenos en nuestras redes!</p>
                         <div className="linksCont">
-                            <Link to="https://www.github.com/javi1227">
+                            <a href='https://www.github.com/javi1227' target={"_blank"}>
                                 <i className="iconCont bi bi-github"></i>
-                            </Link>
-                            <Link to="#">
+                            </a>
+                            <a href='https://www.linkedin.com/in/javiergarcia1227/' target={"_blank"}>
                                 <i className="iconCont bi bi-linkedin"></i>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

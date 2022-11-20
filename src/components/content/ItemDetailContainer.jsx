@@ -52,7 +52,7 @@ return (
         </div>
 
     </div>
-    <div className="Similares">
+    {/* <div className="Similares">
                 <h2>PRODUCTOS SIMILARES</h2>
                 <div className="contenedorSimilares">
                     <div className="ContenedorImg1">
@@ -64,9 +64,8 @@ return (
                     <div className="ContenedorImg3">
                         <img src={images} alt="logo"/>
                     </div>
-
                 </div>
-            </div>
+    </div> */}
 </div>
 )
 }

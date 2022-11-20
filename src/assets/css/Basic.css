@@ -24,10 +24,13 @@ body, html {
     background-color: var(--theme-background-color);
     height: 76vh;
 }
+button {
+    border: none;
+}
 #root {
 
 
---color-white: gray;
+--color-white: white;
 --color-black: black;
 --color-off-white: rgb(216, 212, 212);
 --color-dark-gray: #343d5b;

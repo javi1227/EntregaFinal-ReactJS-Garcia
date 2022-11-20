@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="footerDesign">
       <div className="Contacto-footer">
         <h3>CONTACTO</h3>
-        <p>calle falsa 133</p>
+        <p>Bradsen 805</p>
         <p>C1435DSD | CABA</p>
       </div>
       <div className="Politicas-footer">
@@ -15,20 +15,20 @@ const Footer = () => {
       <div className="Seguinos-footer">
         <h3>SEGUINOS EN</h3>
         <li className="footerIcon">
-          <Link to="https://www.github.com/javi1227">
+        <a href="https://www.github.com/javi1227" target={"_blank"}>
             <i className="icon1 bi bi-github"></i>
-          </Link>
-          <Link to="#">
+        </a>
+          <a href="https://twitter.com/coderhouse" target={"_blank"}>
             <i className="icon1 bi bi-twitter"></i>
-          </Link>
+          </a>
         </li>
         <li className="footerIcon2">
-          <Link to="#">
+        <a href="https://www.linkedin.com/in/javiergarcia1227/" target={"_blank"}>
             <i className="icon1 bi bi-linkedin"></i>
-          </Link>
-          <Link to="#">
+        </a>
+          <a href="https://www.instagram.com/coderhouse/" target={"_blank"}>
             <i className="icon1 bi bi-instagram"></i>
-          </Link>
+          </a>
         </li>
       </div>
     </div>

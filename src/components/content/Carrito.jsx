@@ -12,10 +12,7 @@ const Carrito = () => {
   useContext(CarritoContext);
   const [total, setTotal] = useState(carrito.reduce((total, producto) => total + producto.cantidad * producto.price,0));
 
-    // let total = carrito.reduce(
-    //   (total, producto) => total + producto.cantidad * producto.price,
-    //   0
-    //   );
+
     const DiscountNot =() =>{
       toast.error('CÓDIGO INVALIDO', {
         position: "top-center",
@@ -44,7 +41,7 @@ const Carrito = () => {
         if (
           discount.includes(codigo)
         ) {
-          setTotal(total-(total*0.1))
+          setTotal(total-(total*0.5))
           setDiscount(discount.filter(value=>value !== codigo))
           DiscountGod()
         } else {
