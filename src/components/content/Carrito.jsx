@@ -108,14 +108,14 @@ const Carrito = () => {
                   <span>Precio Total :</span>
                   <span>${total}</span>
                 </div>
-                <span>
-                  <button className="submit-Compra" type="submit" style={{ background: "black", color: "#dc4c2c" }}>
-                    FINALIZAR COMPRA
-                  </button>
+                <span>               
+                      <button className="submit-Compra" type="submit" style={{background: "black"}}>
+                        <Link to="/Checkout" style={{color: "#dc4c2c"}}>FINALIZAR COMPRA</Link>
+                      </button>      
                 </span>
                 <span>
-                  <button className="submit-Compra" type="submit">
-                    <Link to="/" style={{ color: "white" }}>
+                  <button className="submit-Compra" type="submit" style={{background: "#dc4c2c"}}>
+                    <Link to="/" style={{ color: "white"}}>
                       CONTINUAR COMPRANDO
                     </Link>
                   </button>
